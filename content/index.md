@@ -1,11 +1,15 @@
 ---
-{"publish":true,"created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-19T06:20:23.151-03:00","cssclasses":""}
+{"publish":true,"title":"Início","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-19T07:01:34.389-03:00","cssclasses":""}
 ---
+
 
 
 > [!important] **Olá! Eu sou o Celso.** Desenvolvedor apaixonado por Linux e Cloud.
 > 
-> Bem-vindo à minha página do Obsidian!
+> Bem-vindo à minha página! 
+> 
+> Fiz ela usando o Obsidian e publicando com o Quartz v4, hospedando no Github Pages e usando um workflow. A repo tá aqui:
+> https://github.com/cth10/ob2-test
 
 ---
 
