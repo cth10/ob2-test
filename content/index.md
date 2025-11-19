@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Início","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-19T07:01:34.389-03:00","cssclasses":""}
+{"publish":true,"title":"Início","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-19T07:14:13.075-03:00","cssclasses":""}
 ---
 
 
@@ -8,8 +8,18 @@
 > 
 > Bem-vindo à minha página! 
 > 
-> Fiz ela usando o Obsidian e publicando com o Quartz v4, hospedando no Github Pages e usando um workflow. A repo tá aqui:
-> https://github.com/cth10/ob2-test
+>**💡 Sobre este Projeto (Meta-Portfolio)** 
+>
+>Este portfólio não é apenas um site estático, é uma demonstração prática de **Engenharia de Software** e filosofia **Docs-as-Code**.
+>Toda a infraestrutura foi desenhada para ser **Serverless** e **Automatizada**:
+>1. **CMS Local:** Gestão de conteúdo offline via **Obsidian** (Markdown).
+>2. **Versionamento:** Controle total de código e conteúdo via **Git**.
+>3. **CI/CD Pipeline:** Deploy contínuo via **GitHub Actions** a cada commit.
+> 4. **Build & Performance:** Geração estática ultra-rápida com **Quartz v4**
+> 5. **Edge Network:** Entrega global e segurança via **Cloudflare**.
+> 
+> _Resultado: Custo zero de infraestrutura, performance 100/100 no Lighthouse e alta disponibilidade._ [Ver código fonte no GitHub](https://github.com/cth10/ob2-test)
+
 
 ---
 
