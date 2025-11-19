@@ -6,7 +6,7 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   afterBody: [],
-  // footer: Component.Footer({
+   footer: Component.Footer({
     links: {
       // Deixei vazio pra sumir os links do rodapé
     },
