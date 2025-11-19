@@ -8,8 +8,7 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      // Deixei vazio pra sumir os links do rodapé
     },
   }),
 }
@@ -38,12 +37,10 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    // AQUI: Removi o Component.Explorer() pra sumir a árvore de arquivos
   ],
   right: [
-    Component.Graph(),
-    Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
+    // AQUI: Deixei vazio pra não ter nada na direita (sem Graph, sem TOC)
   ],
 }
 
@@ -62,7 +59,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    // AQUI: Removi o Explorer daqui também
   ],
   right: [],
 }
