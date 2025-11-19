@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-19T08:35:19.815-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-19T15:10:54.657-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
 ---
 
 
@@ -143,7 +143,7 @@ _It’s all Chromium!_
 - **📖 Leitura** atual: _O Triste Fim de Policarpo Quaresma_, _O Guia do Mochileiro das Galáxias_
 - **Favorito**: **E Não Sobrou Nenhum** ✨
 - **🔧 Hardware**: Montagem de PCs
-- **🎥 Animes preferidos**: Clannad, FMAB, Steins;Gate, Gakkou no Kaidan, Dark Gathering
+- **🎥 Animes preferidos**: Clannad, Steins;Gate, Gakkou no Kaidan
 
 ><iframe width="600" height="700" src="https://www.youtube.com/embed/2nC5mDNGkUc" title="Mike Herrera - &quot;Superman&quot;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -212,11 +212,11 @@ _It’s all Chromium!_
 > 
 > o google drive eh ótimo pra guardar o trabalho da faculdade, mas eh péssimo, terrível, asqueroso pra um backup gigante do rclone.
 > 
-> ### Parte 2: O Herói (Olá, Backblaze B2! 💖)
+> ### Parte 2: O Herói (Olá, Backblaze B2! )
 > 
 > o Backblaze B2 (ou só "B2") eh um Object Storage. ele AMA pedidos rápidos! vamos comparar:
 > 
-> |Característica|Google Drive (o Vilão 😭)|Backblaze B2 (o Herói 🥰)|
+> |Característica|Google Drive (o Vilão)|Backblaze B2 (o Herói)|
 > |---|---|---|
 > |Limite de Ações|2-3 por segundo|500 por segundo!|
 > |Limite Diário|750 GB|NÃO TEM!|
@@ -290,7 +290,7 @@ _It’s all Chromium!_
 >     - Type: `CNAME`
 >     - Name: `arquivos` (ou `b2`, `nuvem`... o nome q vc puser aqui vai virar [arquivos.meus-animes.com](http://arquivos.meus-animes.com))
 >     - Target: o Friendly URL do Backblaze! (ex: [f005.backblazeb2.com](http://f005.backblazeb2.com))
->     - Proxy status: **LIGADO**! (o ícone da nuvem tem q estar LARANJA! 🧡).
+>     - Proxy status: **LIGADO**! (o ícone da nuvem tem q estar LARANJA!).
 > - Salva!
 > 
 > ### Passo 3: No seu Linux (o Rclone!)
