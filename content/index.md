@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Início","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-19T07:14:13.075-03:00","cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-19T07:30:04.913-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","investidor profissional"],"cssclasses":""}
 ---
 
 
@@ -28,8 +28,8 @@
 - **Backend Java** como foco principal
 - **Linux** no dia a dia
 - Projetos com **Vue.js** e **Ruby on Rails**
-- Certificação: **AWS Cloud Practitioner (CCP)**
-- 🏆 **1º lugar (ampla concorrência)** no Concurso de **Analista de Sistemas** — Prefeitura de Camboriú/SC
+- Certificação: **AWS Cloud Practitioner (CCP)** e **Certificação ANBIMA de Especialistas em Investimento (CEA)**
+
 
 ### Contatos
 
