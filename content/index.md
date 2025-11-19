@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-19T08:01:15.852-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-19T08:05:36.192-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
 ---
 
 
@@ -182,6 +182,8 @@ _It’s all Chromium!_
 ---
 
 # 📝 Blog
+
+>[!important] Rascunhos rápidos e sem formalidades.
 
 > [!note]- Melhor que o AWS S3! Sem egress?! Backup turbo com rclone usando Backblaze B2 + Cloudflare
 > 
