@@ -6,7 +6,7 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   afterBody: [],
-  footer: Component.Footer({
+  // footer: Component.Footer({
     links: {
       // Deixei vazio pra sumir os links do rodapé
     },
@@ -20,8 +20,8 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.Breadcrumbs(),
       condition: (page) => page.fileData.slug !== "index",
     }),
-    Component.ArticleTitle(),
-    Component.ContentMeta(),
+    // Component.ArticleTitle(),
+    // Component.ContentMeta(),
     Component.TagList(),
   ],
   left: [
