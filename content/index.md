@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-19T07:38:30.939-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-19T07:50:16.860-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
 ---
 
 
@@ -8,17 +8,18 @@
 > 
 > Bem-vindo à minha página! 
 > 
->**💡 Sobre este Projeto (Meta-Portfolio)** 
+>** Sobre este Projeto (Meta-Portfolio)** 
 >
->Este portfólio não é apenas um site estático, é uma demonstração prática de **Engenharia de Software** e filosofia **Docs-as-Code**.
+>Este site é uma demonstração prática de **Engenharia de Software** e filosofia **Docs-as-Code**.
+>
 >Toda a infraestrutura foi desenhada para ser **Serverless** e **Automatizada**:
 >1. **CMS Local:** Gestão de conteúdo offline via **Obsidian** (Markdown).
 >2. **Versionamento:** Controle total de código e conteúdo via **Git**.
 >3. **CI/CD Pipeline:** Deploy contínuo via **GitHub Actions** a cada commit.
 > 4. **Build & Performance:** Geração estática ultra-rápida com **Quartz v4**
 > 5. **Edge Network:** Entrega global e segurança via **Cloudflare**.
-> 
-> _Resultado: Custo zero de infraestrutura, performance 100/100 no Lighthouse e alta disponibilidade._ [Ver código fonte no GitHub](https://github.com/cth10/ob2-test)
+>
+> Resultado: Custo zero de infraestrutura, ótima performance e alta disponibilidade.
 
 
 ---
