@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-19T08:05:36.192-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-19T08:35:19.815-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
 ---
 
 
@@ -63,8 +63,8 @@
     - 📊 2 MBAs na área de Economia
 - **Certificações & Cursos**
     - ☁️ AWS Certified Cloud Practitioner (CCP) — [Meus estudos compartilhados](https://celsohamasaki.notion.site/aws)
-    - 🔧 Montagem e Manutenção de Computadores
     - 💰 Certificado ANBIMA CEA
+    - 🔧 Montagem e Manutenção de Computadores
 
 ---
 
