@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-19T07:50:16.860-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-19T08:01:15.852-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
 ---
 
 
@@ -8,7 +8,7 @@
 > 
 > Bem-vindo à minha página! 
 > 
->** Sobre este Projeto (Meta-Portfolio)** 
+>**Sobre este Projeto (Meta-Portfolio)** 
 >
 >Este site é uma demonstração prática de **Engenharia de Software** e filosofia **Docs-as-Code**.
 >
