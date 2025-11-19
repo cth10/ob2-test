@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-19T07:31:56.311-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-19T07:38:30.939-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
 ---
 
 
@@ -99,9 +99,7 @@
 - **Navegadores**
     - Firefox
     - Zen Browser
-- **Redes sociais**
-    - Uso: YouTube, Twitch, Reddit, Servidores Mastodon, Pixiv
-    - Evito: Instagram, TikTok, X, Threads
+
 - **Desenvolvimento**
     - GitLab > GitHub
     - LibreOffice > Pacote Office Windows
@@ -177,15 +175,6 @@ _It’s all Chromium!_
 - Integração de sistemas e ajustes em **Rails** e **Vue.js**
 - Configuração de ambiente **Linux** para desenvolvimento
 - Orientação inicial sobre **AWS** e boas práticas
-
-### Alguns Websites que codei
-
-- [vtubers.com.br](http://vtubers.com.br)
-- [manhua.com.br](http://manhua.com.br)
-- [bilibili.com.br](http://bilibili.com.br)
-- [miku.com.br](http://miku.com.br)
-- [larapwa.com.br](https://larapwa.com.br/)
-- E mais alguns outros! Todos livres de anúncios, open source (github) e sem quaisquer fins lucrativos.
 
   
 
