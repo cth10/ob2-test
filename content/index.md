@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-19T15:10:54.657-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-20T08:13:23.611-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
 ---
 
 
@@ -332,107 +332,36 @@ _It’s all Chromium!_
 > 
 > **bem-vindo ao jeito certo de usar a nuvem no linux!**
 
-> [!note]- Comprando um jogo no dl-site usando PIX e instalando com Lutris
+> [!note]- Comprando um jogo e instalando com Lutris
 > 
->   
+>
 > 
-> Decidi por comprar o jogo 魔棒少女みらくるくるん.
+> Comprei o jogo 魔棒少女みらくるくるん.
 > 
-> Na Steam, estava custavando R$ 26,49.
-> 
-> No dl-site, mais barato.
-> 
-> As prints são auto explicativas…
-> 
->   
-> 
-> ![[imagens/image 3.png]]
-> 
->   
-> 
-> ---
-> 
->   
-> 
-> ![[imagens/jogo.png]]
-> 
-> na página do jogo no dl site, tem um botão rosa chamado Compra de pontos. Lá aparece as instruções de pagamento por pix
-> 
-> ![[imagens/compra-pontos-0.png]]
-> 
-> ![[imagens/compra-pontos.png]]
-> 
-> ---
-> 
-> ![[imagens/compra-pontos-2.png]]
-> 
->   
-> 
-> ---
-> 
-> ![[imagens/compra-pontos-3.png]]
-> 
->   
-> 
-> ---
-> 
->   
-> 
-> ![[imagens/pin.png]]
-> 
-> ---
-> 
->   
-> 
-> ![[imagens/pin-2.png]]
-> 
-> ---
-> 
-> Agora eh só comprar!
-> 
-> ![[imagens/compra-pontos-fim-2.png]]
-> 
-> ---
-> 
->   
-> 
-> ![[imagens/compra-jogo-fim.png]]
-> 
-> ---
-> 
-> Veja se tem cupom!
-> 
-> ![[imagens/cupom.png]]
-> 
-> ---
-> 
-> Pronto!
-> 
-> ![[imagens/fim-compra.png]]
-> 
+> > 
 > # Instalando no Lutris
 > 
 > 1. instala o lutris (se vc nao tem ainda).
 > 
 > [https://lutris.net/downloads](https://lutris.net/downloads)
 > 
-> 1. clica no `+` (la em cima) e "adicionar jogo instalado localmente".
+> 2. clica no `+` (la em cima) e "adicionar jogo instalado localmente".
 > 
 > ![[imagens/image 4.png]]
 > 
 >   
 > 
-> 1. preenche o nome e escolhe "wine" como "executor".
+> 3. preenche o nome e escolhe "wine" como "executor".
 > 
 > ![[imagens/image 5.png]]
 > 
-> 1. na aba "Opções do Jogo", vc aponta pra onde ta o arquivo `.exe` q vc baixou.
+> 4. na aba "Opções do Jogo", vc aponta pra onde ta o arquivo `.exe` q vc baixou.
 > 
 > ![[imagens/image 6.png]]
 > 
-> 1. **essa eh a parte importante:** vai na aba "**Opções do Sistema**".
-> 2. la em baixo, vai ter "Variáveis de Ambiente".
-> 3. clica em "adicionar" e coloca isso:
+> 5. **essa eh a parte importante:** vai na aba "**Opções do Sistema**".
+> 6. la em baixo, vai ter "Variáveis de Ambiente".
+> 7. clica em "adicionar" e coloca isso:
 >     - **Chave:** `LANG`
 >     - **Valor:** `ja_JP.UTF-8`
 > 
@@ -484,6 +413,9 @@ _It’s all Chromium!_
 > depois de instalar, fecha tudo e tenta abrir o jogo de novo!
 > 
 > ![[imagens/image 10.png]]
+> 
+>   
+> 
 
 > [!note]- Pq tanta gente tem medo? Instalar drivers da Nvidia no Fedora é muito, muito fácil e posso provar (RPM Fusion)
 > 
