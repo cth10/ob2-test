@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-20T08:32:37.743-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-20T10:30:53.158-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
 ---
 
 
@@ -187,19 +187,16 @@ _It’s all Chromium!_
 
 > [!note]- Melhor que o AWS S3! Sem egress?! Backup turbo com rclone usando Backblaze B2 + Cloudflare
 > 
+>  
 > pra vc eh q nem eu, vc ama o linux, ama o rclone, mas tá cansado de tentar fazer backup no google drive.
 > 
-> ontem, eu cancelei meu cloud storage do proton drive e migrei pro google drive, utilizando o cryptomator pra criptografar meu backup antes do upload. o problema é que o cryptomator gera vários e vários arquivos criptografados, e isso eh péssimo pra upar pra nuvem!
+> sabe como eh, ne? vc tenta subir aquele backup e o upload fica uma tartaruga... ou entao o seu rclone mount faz o dolphin ou o nautilus engasgarem so pra listar os arquivos? e pra piorar, vc descobre q o google tem um limite de operacoes de api q so deixa subir uns 2 ou 3 arquivos por segundo?
 > 
-> vc já passou por isso? vc tenta subir aquela sua pasta gigante (tipo, 200 GB com 10 mil arquivos)... ...e o upload fica mto lento? ...ou o seu rclone mount faz o dolphin/nautilus "engasgar" só pra olhar os arquivos? ...e vc descobre q o google só te deixa subir 2 ou 3 arquivos por segundo?
+> ![[imagens/Pasted image 20251120100015.png]]
 > 
-> ![[imagens/image 1.png]]
+> eh mto chato! sem falar no limite de upload de 750gb por dia! se vc tem 2tb pra subir, tem q ficar uns 3 dias controlando tudo.
 > 
-> eh mto chato! sem falar no limite de 750 GB por dia! se vc tem 2 TB pra subir, vc tem q ficar 3 dias controlando!
-> 
-> mas... tem um jeito mto mais rápido, sem limite diário, e q pode sair DE GRAÇA pra baixar seus arquivos dnovo?
-> 
-> apresentando os nossos heróis: **Backblaze B2** e **Cloudflare**!
+> mas... tem um jeito mto mais rapido, sem limite diario e q pode sair de graca pra baixar seus arquivos dnovo! apresentando os nossos herois: **backblaze b2** e **cloudflare**!
 > 
 > ### Parte 1: O Vilão (Pq o Google Drive odeia o rclone?)
 > 
@@ -212,7 +209,7 @@ _It’s all Chromium!_
 > 
 > o google drive eh ótimo pra guardar o trabalho da faculdade, mas eh péssimo, terrível, asqueroso pra um backup gigante do rclone.
 > 
-> ### Parte 2: O Herói (Olá, Backblaze B2! )
+> > ### Parte 2: O Herói (Olá, Backblaze B2! )
 > 
 > o Backblaze B2 (ou só "B2") eh um Object Storage. ele AMA pedidos rápidos! vamos comparar:
 > 
@@ -230,7 +227,7 @@ _It’s all Chromium!_
 > 
 > ...só tem um porém...
 > 
-> ### Parte 3: O "Porém" (O Custo de Baixar)
+> > ### Parte 3: O "Porém" (O Custo de Baixar)
 > 
 > o b2 (e a aws, e todos os outros) te cobra pra baixar os arquivos. (chama "egress"). eh barato (tipo $0.01 por GB), mas... se vc baixar seus arquivos de novo, precisa pagar.
 > 
@@ -250,10 +247,10 @@ _It’s all Chromium!_
 > 
 > vc entendeu a mágica?
 > 
-> - vc pede seu anime pro Cloudflare.
-> - o Cloudflare busca seu anime no Backblaze.
+> - vc pede seu arquivo pro Cloudflare.
+> - o Cloudflare busca seu arquivo no Backblaze.
 > - o Backblaze entrega pro Cloudflare (de graça, pq são bffs).
-> - o Cloudflare te entrega o anime (de graça, pq ele eh legal).
+> - o Cloudflare te entrega o arquivo (de graça, pq ele eh legal).
 > 
 > Resultado: **Custo de download = $0.00!**
 > 
@@ -269,7 +266,7 @@ _It’s all Chromium!_
 > 
 > - Conta no Backblaze B2 (que eu lembre, os 10 primeiros GB são de graça).
 > - Conta no Cloudflare.
-> - Um domínio (tipo [meus-animes.com](http://meus-animes.com). essa eh a única parte q custa dinheiro, mas eh tipo R$ 40 por ano).
+> - Um domínio (tipo [cth.jp](https://cth.jp). essa eh a única parte q custa dinheiro, mas eh tipo R$ 40 por ano).
 > 
 > ### Passo 1: No Backblaze B2
 > 
@@ -284,11 +281,11 @@ _It’s all Chromium!_
 > 
 > ### Passo 2: No Cloudflare
 > 
-> - Adiciona seu domínio (ex: [meus-animes.com](http://meus-animes.com)) no Cloudflare. (ele vai te mostrar como trocar os "nameservers" onde vc comprou o domínio).
+> - Adiciona seu domínio (ex: [cth.jp](https:/cth.jp)) no Cloudflare. (ele vai te mostrar como trocar os "nameservers" onde vc comprou o domínio).
 > - Vai na aba "DNS" -> "Records".
 > - Clica em "Add record" e faz assim:
 >     - Type: `CNAME`
->     - Name: `arquivos` (ou `b2`, `nuvem`... o nome q vc puser aqui vai virar [arquivos.meus-animes.com](http://arquivos.meus-animes.com))
+>     - Name: `arquivos` (ou `b2`, `nuvem`... o nome q vc puser aqui vai virar [arquivos.cth.jp](http://arquivos.cth.jp))
 >     - Target: o Friendly URL do Backblaze! (ex: [f005.backblazeb2.com](http://f005.backblazeb2.com))
 >     - Proxy status: **LIGADO**! (o ícone da nuvem tem q estar LARANJA!).
 > - Salva!
@@ -306,7 +303,7 @@ _It’s all Chromium!_
 >     - o rclone vai te perguntar: `endpoint - Endpoint for the service., n, s, >`
 >     - NÃO deixe em branco!
 >     - Coloca aqui o domínio q vc acabou de criar no Cloudflare!
->     - Tipo: [arquivos.meus-animes.com](http://arquivos.meus-animes.com)
+>     - Tipo: [arquivos.cth.jp](http://arquivos.cth.jp)
 > - Termina a configuração (pode dar enter pro resto).
 > 
 > ### Conclusão
@@ -324,12 +321,12 @@ _It’s all Chromium!_
 > 
 >   
 > 
-> (antes de usar esse método, o que costumava fazer era usar o veracrypt pra criar um único arquivo criptografado tacar tudo lá dentro, mas quando quero um sync, ter que fazer backup full pra nuvem a cada vez, é demorado e pouco seguro (se der um problema antes do próximo backup full).
+> (o que eventualmente fazia era usar o veracrypt pra criar um único arquivo criptografado e tacar tudo lá dentro, mas quando quero um sync, ter que fazer backup full pra nuvem a cada vez, é demorado e pouco seguro (se der um problema antes do próximo backup full).
 > 
 > era bom pra backup local, mas nada prático pra sync em nuvem.)
 > 
->   
 > 
+>
 > **bem-vindo ao jeito certo de usar a nuvem no linux!**
 
 > [!note]- Rodando jogo de Windows e com fontes japonesas no Linux, através do Lutris
