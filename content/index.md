@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-19T04:37:46.079-03:00","modified":"2025-11-20T10:30:53.158-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-30T22:23:47.383-03:00","modified":"2025-11-30T22:32:32.496-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
 ---
 
 
@@ -184,6 +184,37 @@ _It’s all Chromium!_
 # 📝 Blog
 
 >[!important] Rascunhos rápidos e sem formalidades.
+
+> [!note]- Bypass Requisitos Windows 11 (TPM/Secure Boot) em VM
+>
+>
+> fui instalar o windows 11 no gnome boxes e recebi aquele erro: "This PC doesn't currently meet Windows 11 system requirements".
+>
+> basicamente ele reclama de falta de TPM 2.0 e Secure Boot. vamos arrumar pra funcionar sem, afinal é uma vm
+> 
+>![[imagens/Pasted image 20251130222709.png]]
+> ### O "Hack" do Regedit
+>
+> quando chegar nessa tela de erro (ou logo no começo da instalação):
+>
+> 1. aperta **Shift + F10** pra abrir o terminal (cmd).
+> 2. digita `regedit` e da enter.
+>    
+>    ![[imagens/2025-11-30_22-20.png]]
+> 1. navega até: `HKEY_LOCAL_MACHINE` > `SYSTEM` > `Setup`.
+> 2. clica com botão direito na pasta **Setup** > New > **Key** e nomeia como `LabConfig`.
+> 3. dentro da `LabConfig`, clica com botão direito > New > **DWORD (32-bit) Value**.
+>    ![[imagens/2025-11-30_22-21.png]]
+> 4. cria esses dois valores:
+>    - `BypassTPMCheck`
+>    - `BypassSecureBootCheck`
+> 5. clica duas vezes neles e muda o valor de **0** para **1**.
+>    ![[imagens/2025-11-30_22-22.png]]
+>![[imagens/2025-11-30_22-22_1.png]]
+>
+> depois eh so fechar o regedit e o cmd, voltar uma tela na instalação e avançar de novo. o instalador para de reclamar e deixa vc ser feliz.
+> ![[imagens/2025-11-30_22-22_2.png]]
+> 
 
 > [!note]- Melhor que o AWS S3! Sem egress?! Backup turbo com rclone usando Backblaze B2 + Cloudflare
 > 
