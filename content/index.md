@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-30T22:23:47.383-03:00","modified":"2025-11-30T23:12:11.948-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-30T22:23:47.383-03:00","modified":"2025-11-30T23:33:20.106-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
 ---
 
 
@@ -185,6 +185,41 @@ _It’s all Chromium!_
 
 >[!important] Rascunhos rápidos e sem formalidades.
 
+>[!note]- A primeira coisa que eu faço ao instalar o Windows 11
+>
+>
+> blz, eu instalei o windows 11... e ai?
+>
+> o windows 11 eh pesado e cheio de bloatware. entao, antes de instalar qualquer coisa, eu rodo esse script do [Raphire](https://github.com/Raphire/Win11Debloat). ele eh open source.
+>
+> ### O Ritual de Limpeza
+>
+> 1. abro o menu iniciar, digito `powershell` e... mto importante: clico com botao direito em **Executar como Administrador** (senao nao funciona!).
+>
+> ![[imagens/2025-11-30_23-17_1.png]]
+>
+> 2. colo esse comando e aperta enter:
+>
+> `& ([scriptblock]::Create((irm "https://debloat.raphi.re/")))`
+>
+> ![[imagens/2025-11-30_23-18.png]]
+>
+> 3. vai abrir esse menu azul. pra pra mim, a opção **1 (Default mode)** eh a perfeita. ela tira o lixo mas mantem a loja e coisas essenciais funcionando. digito `1` e enter.
+>
+> ![[imagens/2025-11-30_23-18_2.png]]
+>
+> 4. ele vai perguntar se quer remover os apps padrao (bloatware). obvio q sim! aperto `1` de novo.
+>
+> ![[imagens/2025-11-30_23-19.png]]
+>
+> 5. agora eh so ver a magia acontecer. ele vai desabilitar telemetria, bing search, copilot, widgets chatos, recall... tudo!
+>
+> ![[imagens/2025-11-30_23-19_1.png]]
+>
+> qnd terminar, ele reinicia o explorer sozinho e seu SO vai estar mais leve!
+>
+> ![[imagens/2025-11-30_23-20.png]]
+
 > [!note]- Bypass Login Microsoft no Windows 11
 > o oobe\bypassnro não funciona mais.
 > 
@@ -197,7 +232,7 @@ _It’s all Chromium!_
 > 
 > ![[imagens/2025-11-30_23-09_1.png]]
 > 
-> pronto! a instalação deve continuar normalmente
+> pronto!
 > 
 > ![[imagens/Pasted image 20251130231210.png]]
 
