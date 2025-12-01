@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-30T22:23:47.383-03:00","modified":"2025-11-30T22:32:32.496-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-30T22:23:47.383-03:00","modified":"2025-11-30T23:12:11.948-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
 ---
 
 
@@ -184,6 +184,22 @@ _It’s all Chromium!_
 # 📝 Blog
 
 >[!important] Rascunhos rápidos e sem formalidades.
+
+> [!note]- Bypass Login Microsoft no Windows 11
+> o oobe\bypassnro não funciona mais.
+> 
+> quando chegar na tela que pede pra fazer login, aperte shift + f10 digite este comando: 
+> cmd start ms-cxh:localonly
+> 
+> ![[imagens/2025-11-30_23-09.png]]
+> 
+> crie a conta local
+> 
+> ![[imagens/2025-11-30_23-09_1.png]]
+> 
+> pronto! a instalação deve continuar normalmente
+> 
+> ![[imagens/Pasted image 20251130231210.png]]
 
 > [!note]- Bypass Requisitos Windows 11 (TPM/Secure Boot) em VM
 >
