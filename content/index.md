@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-30T22:23:47.383-03:00","modified":"2025-12-01T01:19:05.187-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-30T22:23:47.383-03:00","modified":"2025-12-01T09:17:08.158-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
 ---
 
 
@@ -224,7 +224,7 @@ _It’s all Chromium!_
 > o oobe\bypassnro não funciona mais.
 > 
 > quando chegar na tela que pede pra fazer login, aperte shift + f10 digite este comando: 
-> cmd start ms-cxh:localonly
+> start ms-cxh:localonly
 > 
 > ![[imagens/2025-11-30_23-09.png]]
 > 
