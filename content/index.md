@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-30T22:23:47.383-03:00","modified":"2025-12-01T09:17:08.158-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-30T22:23:47.383-03:00","modified":"2025-12-07T18:18:16.225-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
 ---
 
 
@@ -184,6 +184,16 @@ _It’s all Chromium!_
 # 📝 Blog
 
 >[!important] Rascunhos rápidos e sem formalidades.
+
+> [!note]- IA eh bolha?
+>
+> minha opiniao neste momento, final de 2025, sobre a IA ser 'uma bolha': eu nao acho q seja uma bolha, mto longe disso. a IA eh revolucionaria!
+>
+> mas, considerando a inteligencia e a utilidade pratica atual da IA nos negocios, tem mto FOMO por parte dos investidores.
+>
+> isso fica claro na quantidade de empresas fazendo implementações q nao sao realmente praticas para o nivel da tecnologia atual, apenas para agradar investidores. no mundo real, as pessoas estao cansadas de 'AI slop'. (¬_¬)
+> 
+>![[imagens/ai-slop.jpg]]
 
 >[!note]- A primeira coisa que eu faço ao instalar o Windows 11
 >
@@ -1175,7 +1185,7 @@ _It’s all Chromium!_
 > 
 > Um fato curioso de Hong Kong é que a maioria das notas são emitidas por bancos privados.
 > 
-> ![[imagens/image 25.png]]
+> ![[imagens/cedula-dinheiro-hong-kong.png]]
 > 
 > Na imagem, uma nota de 100 HKD emitida pelo HSBC.
 
@@ -1376,7 +1386,7 @@ _It’s all Chromium!_
 > 
 > Pode ser algo bobo, mas eu acho que o documento oficial de identificação estar escrito errado é grotesco.
 > 
-> ![[imagens/image 31.png]]
+> ![[imagens/foto-rg.png]]
 
 > [!quote]- 2025 - Aprovado na AWS CCP!
 > 
@@ -1386,7 +1396,7 @@ _It’s all Chromium!_
 > 
 >   
 > 
-> ![[imagens/image 32.png]]
+> ![[imagens/aws-ccp-certificado.png]]
 
 > [!quote]- 2025 - Ubuntu apenas na RAM
 > 
@@ -1454,7 +1464,7 @@ _It’s all Chromium!_
 > initrd /initrd.img-ram  
 > }  
 > 
-> ![[imagens/image 33.png]]
+> ![[imagens/ubuntu-ram.png]]
 
 > [!quote]- 2025 - Conclusão MBA em Macroeconomia & Portfolio Management!
 > 
@@ -1472,4 +1482,4 @@ _It’s all Chromium!_
 > 
 > Queria agradecer mto aos professores incríveis que eu tive! Foi uma grande honra quando o Guedes respondeu minha dúvida ao vivo.
 > 
-> ![[imagens/image 34.png]]
+> ![[imagens/certificado-conclusao-mba.png]]
