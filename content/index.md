@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-30T22:23:47.383-03:00","modified":"2025-12-07T18:18:16.225-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-30T22:23:47.383-03:00","modified":"2025-12-18T00:42:29.793-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
 ---
 
 
@@ -8,8 +8,7 @@
 > 
 > Bem-vindo à minha página! 
 > 
->**Sobre este Projeto (Meta-Portfolio)** 
->
+>**Sobre este Projeto (Meta-Portfolio)** >
 >Este site é uma demonstração prática de **Engenharia de Software** e filosofia **Docs-as-Code**.
 >
 >Toda a infraestrutura foi desenhada para ser **Serverless** e **Automatizada**:
@@ -184,6 +183,32 @@ _It’s all Chromium!_
 # 📝 Blog
 
 >[!important] Rascunhos rápidos e sem formalidades.
+
+> [!note]- O segredo das fábricas
+>
+> tava no mercado e comprei um chocotone da visconti. chegando em casa fui pesquisar se era bom msm, pra ver se valia o preço.
+>
+> descobri q a fabrica da visconti eh a mesma da baudduco (a **pandurata**), apesar da diferença de preços. e ai surgiu a duvida: se eh da mesma empresa, entao pra que separar em marcas diferentes?
+>
+> a resposta eh simples: **eles fazem isso pra nao deixar dinheiro na mesa.** (¬‿¬)
+>
+> se vc tem 10 reais, eles tem um produto pra vc. se vc tem 100 reais, eles tem um produto pra vc tbm. o objetivo eh garantir que ninguém saia da loja sem comprar algo deles. eles querem o dinheiro de todo mundo, do _rich_ ao _broke_! kkkk
+>
+> a empresa sabe que nem todo mundo pode pagar caro num panetone. então, em vez de perder cliente pra concorrência, eles criaram um "ranking" interno:
+>
+> - **bauducco (Tier S):** eh a marca premium. aqui vc paga pela tradição, pela caixa chique de presente e pelo marketing pesado na tv.
+> - **visconti (Tier A):** eh o famoso custo-benefício! eh pra quem quer qualidade boa sem falir.
+> - **tommy (Tier B):** eh a linha de combate, feita pra ser super barata e brigar com as marcas desconhecidas.
+>
+> ### Outras empresas fazem isso?
+>
+> sim, mtas! tipo a **unilever** com sabão em pó:
+>
+> - **Tier S (OMO):** promete lavar mais branco, tem enzimas da nasa (brincadeira), e custa caro.
+> - **Tier A (Brilhante):** eh o meio termo. bom, cheiroso, mas sem tanto marketing de "tecnologia".
+> - **Tier B (Surf):** sabe aquele baratinho que tem cheiro super forte de flores? eh esse.
+>
+> **plot twist:** se vc compra OMO pra roupa de sair e Surf pra lavar pano de chão... parabéns, vc deu lucro pra unilever duas vezes. _stonks_!
 
 > [!note]- IA eh bolha?
 >
