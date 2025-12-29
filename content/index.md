@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-30T22:23:47.383-03:00","modified":"2025-12-18T00:42:29.793-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-30T22:23:47.383-03:00","modified":"2025-12-28T21:57:08.589-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
 ---
 
 
@@ -184,6 +184,34 @@ _It’s all Chromium!_
 
 >[!important] Rascunhos rápidos e sem formalidades.
 
+> [!note]- Dumping e Cash Burn
+>
+> tava pensando aqui sobre como algumas empresas conseguem cobrar preços que matematicamente não fazem sentido. tipo, como que uma entrega ou uma corrida de app custava centavos uns anos atrás?
+>
+> no "economês", mta gente chama isso de **dumping**, mas no mundo das startups e big techs o nome tecnico é **cash burn** (queimar caixa). a lógica é a mesma: operar com margem negativa propositalmente pra ganhar market share.
+>
+>
+> ### O caso das Estatais
+>
+> quando a gente olha pra empresas públicas, tipo os correios, a dinâmica é fiscal. como eles possuem imunidade tributária (remissão fiscal) e o backing do estado, eles conseguem manter operações em lugares onde nenhuma empresa privada conseguiria lucrar.
+>
+> em interiores com pouco volume, o custo logístico é alto demais. a empresa privada precisa repassar isso pro preço (senão ela quebra). já a estatal consegue "diluir" isso ou absorver o deficit pq o objetivo final não é só o lucro, mas a universalização do serviço.
+>
+> o problema de concorrência surge qnd essa vantagem fiscal torna impossível pra qualquer outro player entrar no mercado. é um ciclo difícil de quebrar: o concorrente não tanka os impostos, e a estatal não precisa se preocupar com eles.
+>
+> ### O modelo "Winner Takes All" das Big Techs
+>
+> mas não é só estatal que faz isso. o setor privado, especialmente tecnologia, elevou isso a outro nível com o **Venture Capital**.
+>
+> o mercado viu isso acontecer varias vezes com o modelo de "crescimento a qualquer custo":
+>
+> - **iFood e Uber:** durante anos, essas empresas operaram com prejuízos bilionários. o dinheiro dos investidores subsidiava o cupom de desconto do seu almoço ou a corrida barata. o objetivo era asfixiar a concorrência (que não tinha esse capital infinito) até sobrar só eles.
+> - **Amazon:** existe o caso clássico (e estudado em faculdades) da *diapers.com*, onde a amazon baixou os preços de fraldas para baixo do custo de produção até o concorrente desistir e aceitar ser comprado.
+> - **OpenAI:** hoje em dia, vemos isso com IA. o custo computacional pra rodar o chatgpt é astronômico, muito maior do que o valor da assinatura cobre. eles queimam caixa pra garantir que, quando a tecnologia se estabilizar, eles sejam o padrão de mercado.
+>
+>
+> no fim das contas, quem aguenta sangrar dinheiro por mais tempo, leva o mercado. e a gente aproveita os preços baixos agora, pq a conta (o aumento de preços pós-monopólio) sempre chega depois. 
+
 > [!note]- O segredo das fábricas
 >
 > tava no mercado e comprei um chocotone da visconti. chegando em casa fui pesquisar se era bom msm, pra ver se valia o preço.
@@ -208,7 +236,7 @@ _It’s all Chromium!_
 > - **Tier A (Brilhante):** eh o meio termo. bom, cheiroso, mas sem tanto marketing de "tecnologia".
 > - **Tier B (Surf):** sabe aquele baratinho que tem cheiro super forte de flores? eh esse.
 >
-> **plot twist:** se vc compra OMO pra roupa de sair e Surf pra lavar pano de chão... parabéns, vc deu lucro pra unilever duas vezes. _stonks_!
+> se vc compra OMO pra roupa de sair e Surf pra lavar pano de chão... parabéns, vc deu lucro pra unilever duas vezes. _stonks_!
 
 > [!note]- IA eh bolha?
 >
