@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-30T22:23:47.383-03:00","modified":"2026-01-03T04:58:14.592-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-30T22:23:47.383-03:00","modified":"2026-01-03T05:05:05.754-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
 ---
 
 
@@ -237,6 +237,8 @@ _It’s all Chromium!_
 > pronto! agora vc tem um pc na nuvem pra deixar farmando jogo, baixando coisas ou codando de qualquer lugar!
 >
 > ![[imagens/NOMACHINE.png]]
+> ![[imagens/vps-2.png]]
+> ![[imagens/vps-3.png]]
 
 > [!note]- Dumping e Cash Burn
 >
