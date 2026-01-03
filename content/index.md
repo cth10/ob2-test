@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-30T22:23:47.383-03:00","modified":"2025-12-28T21:57:08.589-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-30T22:23:47.383-03:00","modified":"2026-01-03T04:58:14.592-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
 ---
 
 
@@ -183,6 +183,60 @@ _It’s all Chromium!_
 # 📝 Blog
 
 >[!important] Rascunhos rápidos e sem formalidades.
+
+> [!note]- Como criar seu próprio Cloud Computer com Hostinger + NoMachine
+>
+> sabe quando vc quer rodar algo pesado, ou precisa de uma internet super rapida (tipo 1gbps+), mas seu pc ou sua net de casa nao tankam?
+>
+> a soluçao eh ter um **Cloud Computer**! ou seja, uma vps com interface grafica.
+>
+> eu testei varias opçoes e a combi mais barata que achei foi usar uma VPS da Hostinger com o ambiente grafico XFCE (que eh super leve) e acessar via NoMachine.
+>
+> ### 1. O Hardware (VPS)
+> eu to usando a Hostinger. o ping pro brasil eh decente e o preço eh excelente.
+>
+> sou parceiro da hostinger e meu link de indicação da desconto!
+> ![[imagens/hostinger.png]]
+> 👉 [Hostinger](https://hostinger.com.br?REFERRALCODE=BCOMIUNAHEUT)
+>
+> 👉 [KVM 8](https://www.hostinger.com.br/cart?product=vps%3Avps_kvm_8&period=12&referral_type=cart_link&REFERRALCODE=BCOMIUNAHEUT&referral_id=019b829e-065e-70f1-847c-3f3f06a48575)
+>
+> (escolha o plano **KVM 2** ou superior pra ter pelo menos 4gb de ram, senao o navegador vai crashar, ok?)
+>
+> ### 2. O Segredo: NoMachine (NX Protocol)
+> "ah, mas pq nao usar VNC ou RDP?"
+>
+> pq eles sao lentos demais! o NoMachine usa um protocolo proprio (NX) que comprime o video super bem. a latencia eh tao baixa que parece que o pc ta na sua frente. da ate pra ver video no youtube remoto sem travar!
+>
+> ### 3. Como configurar (Tutorial Rápido)
+> eu escolhi o ubuntu lts pela maior compatibilidade e menos chances de dar bugs (espero q ngm aqui precise passar pela experiencia de desbugar o driver de audio de uma vm), e depois instalei o xfce. o linux ja ta pronto. so falta instalar o servidor do NoMachine.
+>
+> acessa sua vps via SSH e roda isso aqui:
+>
+> **Baixar o NoMachine:** (o link pode mudar, entao pega o link do .deb mais atual no site deles se esse falhar)
+>
+> ```bash
+> wget https://download.nomachine.com/download/8.11/Linux/nomachine_8.11.3_4_amd64.deb
+> ```
+>
+> **Instalar:**
+>
+> ```bash
+> sudo dpkg -i nomachine_*.deb
+> ```
+>
+> **Liberar a porta (Importante!):** o NoMachine usa a porta 4000. se o firewall tiver ligado, vc nao conecta.
+>
+> ```bash
+> sudo ufw allow 4000/tcp
+> ```
+>
+> ### 4. Conectando
+> agora eh so baixar o cliente do NoMachine no seu pc (windows/linux/mac), clicar em "Add", colocar o IP da sua VPS e usar seu usuario e senha do linux (geralmente root ou o usuario q vc criou).
+>
+> pronto! agora vc tem um pc na nuvem pra deixar farmando jogo, baixando coisas ou codando de qualquer lugar!
+>
+> ![[imagens/NOMACHINE.png]]
 
 > [!note]- Dumping e Cash Burn
 >
