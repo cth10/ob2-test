@@ -4,6 +4,7 @@
 
 
 
+
 > [!important] **Olá! Eu sou o Celso.** Desenvolvedor apaixonado por Linux e Cloud.
 > 
 > Bem-vindo à minha página! 
@@ -183,6 +184,51 @@ _It’s all Chromium!_
 # 📝 Blog
 
 >[!important] Rascunhos rápidos e sem formalidades.
+
+> [!note]- Minhas previsões pro futuro do mundo (Geopolítica)
+>
+> resolvi escrever o que minha intuição diz sobre o que vai acontecer com o mundo nos próximos anos.
+>
+> ###  Taiwan & Japão
+>
+> pra mim, **Taiwan** vai ser retomado pela china nos próximos 10 anos. vai ter mta treta, choro e guerra infelizmente... mas no final, os EUA vao acabar abandonando eles. 
+>
+> e ai sobra pro **Japão**. depois de taiwan, o japao corre mto risco de ser invadido pela china tbm. eh por isso q o japao precisa investir pesado em defesa e defender taiwan com tudo! eles sabem q se taiwan cair, eles sao os proximos.
+>
+> o japao eh super dependente de importações (nao tem territorio bom pra plantações) e tudo passa pelo mar ali perto da china.
+>
+> ###  As Américas
+>
+> aqui no nosso lado, a influencia do EUA vai ser total:
+>
+> - **México:** os eua vao exercer um controle bem maior.
+> - **Venezuela:** vai ser praticamente territorio dos eua.
+> - **Bolívia:** periga ser invadida tbm se os paises da america latina nao se organizarem logo.
+>
+> e o **Brasil**? precisa investir mto mais em defesa! era pro brasil ser o lider do bloco da america latina, mas... vai acabar sendo tudo dos estados unidos. principalmente a regiao norte, pela proximidade geografica e militar com eles. alta pressao e dependencia total.
+>
+> ### Oceania
+>
+> **Austrália e NZ** vao sofrer mta pressao e influencia da china.
+>
+> ### Africa
+>
+> continuará igual, sofrendo bastante influencia de investimentos e endividamentos com a china
+>
+> ### O Mundo em 4 Blocos
+>
+> no fim das contas, eu vejo o mundo dividido em quatro grandes blocos pra manter a balança de poder:
+>
+> 1. **Bloco Rússia**
+> 2. **Bloco União Europeia**
+> 3. **Bloco China** (leste asiatico, coreia do sul, japao e oceania)
+> 4. **Bloco EUA** (america do norte e forte presença na america do sul)
+>
+> *(e o oriente medio continua com as disputas entre israel e palestina...)*
+>
+> eh isso... eh um futuro meio assustador, mas eh oq eu vejo se desenhando. 
+>
+> 
 
 > [!note]- Como criar seu próprio Cloud Computer com Hostinger + NoMachine
 >
