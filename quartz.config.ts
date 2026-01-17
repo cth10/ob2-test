@@ -15,7 +15,7 @@ const config: QuartzConfig = {
     analytics: {
       provider: "plausible",
     },
-    locale: "pt-BR", =
+    locale: "pt-BR",
     baseUrl: "cth.jp", // ARRUMEI AQUI: Tirei a barra final pra evitar erros de link
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
