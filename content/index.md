@@ -1,6 +1,27 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-01-17T12:56:18.246-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Cellebrite","Anti-Forense"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-01-17T13:50:41.188-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Cellebrite","Anti-Forense"],"cssclasses":""}
 ---
+
+
+<style>
+  /* hackzinho pro mobile n chorar */
+iframe, video {
+    max-width: 100%;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px; /* deixei os cantos redondos mas sla se tiro dps */
+  }
+
+  img {
+    max-width: 100%;      /* n deixa passar da largura da tela */
+    height: auto;         /* Mantém a proporção pra n esticar */
+    display: block;       /* Comporta como bloco */
+    margin: 0 auto;       /* Centraliza a imagem na tela */
+    object-fit: contain;  /* Garante que a imagem caiba direitinho */
+  }
+</style>
+</style>
 
 
 
@@ -87,7 +108,7 @@
 - 🗄️ Banco de dados e boas práticas
 - 🔧 DevOps básico e automações
 
-><iframe width="700" height="500" src="https://www.youtube.com/embed/ESx_hy1n7HA" title="Mili - world.execute(me);" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+><iframe style="width: 100%; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/ESx_hy1n7HA" title="Mili - world.execute(me);" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
   
@@ -128,7 +149,7 @@ _It’s all Chromium!_
 
 - Aprendendo: **Lua**, **C** e **C++**
     
-     <iframe width="700" height="600" src="https://www.youtube.com/embed/tas0O586t80" title="Program in C" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     <iframe style="width: 100%; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/tas0O586t80" title="Program in C" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 	
 	
     
@@ -144,7 +165,7 @@ _It’s all Chromium!_
 - **🔧 Hardware**: Montagem de PCs
 - **🎥 Animes preferidos**: Clannad, Steins;Gate, Gakkou no Kaidan
 
-><iframe width="600" height="700" src="https://www.youtube.com/embed/2nC5mDNGkUc" title="Mike Herrera - &quot;Superman&quot;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+><iframe style="width: 100%; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/2nC5mDNGkUc" title="Mike Herrera - &quot;Superman&quot;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
