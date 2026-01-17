@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-01-17T14:13:11.978-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Cellebrite","Anti-Forense"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-01-17T14:37:31.789-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Cellebrite","Anti-Forense"],"cssclasses":""}
 ---
 
 
@@ -231,6 +231,115 @@ _It’s all Chromium!_
 >[!important] Rascunhos rápidos e sem formalidades.
 
 
+
+
+>[!note]- Responsividade é um inferno
+>
+> quem acessa meu site pelo pc (monitor ultrawide, linux, terminal aberto) vê tudo lindo. o **Quartz v4** faz um trabalho incrivel gerando o site estático direto do meu cofre do **Obsidian**.
+>
+> mas ai resolvi abrir o site no celular... e meus olhos sangraram. 🩸
+>
+> ### O Caos
+>
+> basicamente, o layout tava todo quebrado no mobile (iPhone e Android).
+> 1. **Vídeos do YouTube:** eu usava iframes com tamanho fixo (`width="700"`), entao o video estourava a tela e criava um scroll horizontal infinito.
+> 2. **Tabelas:** cortadas pela metade. não dava pra ler as colunas da direita.
+> 3. **Imagens:** algumas ficavam gigantes e empurravam o texto pro limbo.
+>
+> como o css do quartz eh gerado automaticamente no build (e eu tava com preguiça de mexer no sass global e esperar o deploy do github actions), apelei pra solução mais *roots* possivel: **injetar CSS direto no Markdown.**
+>
+> ### A Solução (A tal da "Gambiarra Técnica")
+>
+> o quartz aceita tags html dentro do `.md`. entao, se vc colocar um bloco `<style>` logo depois do frontmatter (aquelas configs do topo), ele aplica o estilo só naquela página.
+>
+> foi assim que eu dominei a fera:
+>
+> #### Vídeos e Imagens Comportados
+> pro video parar de estourar, a gente usa `aspect-ratio: 16/9`. isso faz ele calcular a altura sozinho baseado na largura da tela. magia pura.
+>
+> ```css
+> iframe, video {
+>     max-width: 100%;
+>     width: 100% !important; /* força bruta pra obedecer */
+>     height: auto !important;
+>     aspect-ratio: 16 / 9;
+>     border-radius: 8px; /* pra ficar bonitinho */
+> }
+>
+> img {
+>     max-width: 100%;
+>     height: auto;
+>     object-fit: contain;
+> }
+> ```
+>
+> #### O Boss Final: Tabelas
+>
+> tabela em html eh chata. por padrao, ela nao aceita scroll. se a tabela eh larga, ela alarga o site todo. o truque foi transformar a tabela em bloco (`display: block`) pra liberar o scroll horizontal (`overflow-x: auto`).
+>
+> ```css
+> table {
+>     display: block !important; /* o pulo do gato */
+>     width: 100% !important;
+>     overflow-x: auto !important;
+>     white-space: nowrap; /* opcional, pra n quebrar linha dentro da celula */
+> }
+> ```
+>
+> #### O Código Final (Copy & Paste)
+>
+> se vc usa quartz/obsidian e ta sofrendo com isso, cola isso aqui no topo do seu arquivo (depois dos `---`):
+>
+> ```html
+> <style>
+>   /* 🛡️ SUPER ESCUDO ANTI-QUEBRA MOBILE v3.0 */
+>   
+>   /* 1. Mídia (Vídeos e Imagens) */
+>   iframe, video {
+>     max-width: 100%;
+>     width: 100% !important;
+>     height: auto !important;
+>     aspect-ratio: 16 / 9;
+>     border-radius: 8px;
+>   }
+>
+>   img {
+>     max-width: 100%;
+>     height: auto;
+>     display: block;
+>     margin: 0 auto;
+>     object-fit: contain;
+>   }
+>
+>   /* 2. Tabelas com Scroll */
+>   table {
+>     display: block !important;
+>     width: 100% !important;
+>     overflow-x: auto !important;
+>     white-space: nowrap;
+>     -webkit-overflow-scrolling: touch;
+>   }
+>   
+>   /* 3. Códigos e Blocos Longos */
+>   pre, code {
+>     white-space: pre-wrap !important;
+>     word-break: break-all !important;
+>     max-width: 100%;
+>     overflow-x: auto !important;
+>   }
+>
+>   /* 4. Callouts */
+>   .callout, blockquote {
+>     max-width: 100%;
+>     overflow-wrap: break-word;
+>     box-sizing: border-box;
+>   }
+> </style>
+> ```
+>
+> agora meu site carrega liso no mobile, meus videos nao quebram o layout e eu posso voltar a programar em Java em paz.
+>
+> frontend is my passion (sqn).
 
 > [!note]- A Devassa Digital em Brasília, Banco Master e Cellebrite (+ Toolset Pessoal)
 >
