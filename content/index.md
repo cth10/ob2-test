@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-01-17T16:40:13.301-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Cellebrite","Anti-Forense"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-01-17T16:53:37.053-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
 ---
 
 
@@ -226,7 +226,7 @@ _It’s all Chromium!_
 
 ---
 
-# 📝 Blog
+# 📝 Blog | Artigos sobre Java, Cellebrite, Linux e TI
 
 >[!important] Rascunhos rápidos e sem formalidades.
 
@@ -254,8 +254,7 @@ _It’s all Chromium!_
 >
 > foi assim que eu dominei a fera:
 >
-> #### Vídeos e Imagens Comportados
-> pro video parar de estourar, a gente usa `aspect-ratio: 16/9`. isso faz ele calcular a altura sozinho baseado na largura da tela. magia pura.
+> **Vídeos e Imagens Comportados** — pro video parar de estourar, a gente usa `aspect-ratio: 16/9`. isso faz ele calcular a altura sozinho baseado na largura da tela. magia pura.
 >
 > ```css
 > iframe, video {
@@ -273,9 +272,7 @@ _It’s all Chromium!_
 > }
 > ```
 >
-> #### O Boss Final: Tabelas
->
-> tabela em html eh chata. por padrao, ela nao aceita scroll. se a tabela eh larga, ela alarga o site todo. o truque foi transformar a tabela em bloco (`display: block`) pra liberar o scroll horizontal (`overflow-x: auto`).
+> **O Boss Final: Tabelas** — tabela em html eh chata. por padrao, ela nao aceita scroll. se a tabela eh larga, ela alarga o site todo. o truque foi transformar a tabela em bloco (`display: block`) pra liberar o scroll horizontal (`overflow-x: auto`).
 >
 > ```css
 > table {
@@ -286,9 +283,7 @@ _It’s all Chromium!_
 > }
 > ```
 >
-> #### O Código Final (Copy & Paste)
->
-> se vc usa quartz/obsidian e ta sofrendo com isso, cola isso aqui no topo do seu arquivo (depois dos `---`):
+> **O Código Final (Copy & Paste)** — se vc usa Quartz ou Obsidian e ta sofrendo com isso, cola isso aqui no topo do seu arquivo (depois dos `---`):
 >
 > ```html
 > <style>
@@ -440,9 +435,7 @@ _It’s all Chromium!_
 >
 > O resultado? O arquivo continua lá ocupando espaço, mas o conteúdo é matematicamente irrecuperável. É mais seguro e rápido que ficar escrevendo zeros.
 >
-> #### O Código Fonte (Use com cuidado!)
->
-> Tenho duas versões. Uma gráfica (pra selecionar arquivos manuais) e uma CLI (que roda no boot limpando meu cache).
+> **O Código Fonte (Use com cuidado!)** — Tenho duas versões. Uma gráfica (pra selecionar arquivos manuais) e uma CLI (que roda no boot limpando meu cache).
 >
 > **Versão 1: GUI (Selecionar Arquivos)**
 > *Requer: libgtk-3-dev libssl-dev*
@@ -1107,8 +1100,8 @@ _It’s all Chromium!_
 > Comprei o jogo 魔棒少女みらくるくるん.
 > 
 > > 
-> # Instalando no Lutris
-> 
+> ### Instalando no Lutris
+>
 > 1. instala o lutris (se vc nao tem ainda).
 > 
 > [https://lutris.net/downloads](https://lutris.net/downloads)
@@ -1571,8 +1564,8 @@ _It’s all Chromium!_
 
 > [!quote]- 2022 - Aprovado ANBIMA CEA
 > 
-> [https://www.linkedin.com/posts/activity-6989197351521267713-Gs_R?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U](https://www.linkedin.com/posts/activity-6989197351521267713-Gs_R?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
-> 
+> [Post: Aprovado ANBIMA CEA de primeira](https://www.linkedin.com/posts/activity-6989197351521267713-Gs_R?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
+>
 > Aprovado no CEA (Certificação ANBIMA de Especialistas em Investimento) de primeira!
 > 
 > Prova tranquila.
@@ -1585,10 +1578,10 @@ _It’s all Chromium!_
 
 > [!quote]- 2022 - Jogos online e Criptomoedas
 > 
-> [https://www.linkedin.com/pulse/jogos-online-e-criptomoedas-celso-takeshi-hamasaki/?trackingId=%2BSQjFJI6J0MsCrRYoMaxdA%3D%3D](https://www.linkedin.com/pulse/jogos-online-e-criptomoedas-celso-takeshi-hamasaki/?trackingId=%2BSQjFJI6J0MsCrRYoMaxdA%3D%3D)
-> 
+> [Artigo: Jogos online e criptomoedas](https://www.linkedin.com/pulse/jogos-online-e-criptomoedas-celso-takeshi-hamasaki/?trackingId=%2BSQjFJI6J0MsCrRYoMaxdA%3D%3D)
+>
 >   
-> 
+>
 > Nasci em 1996, época do início da rápida expansão dos computadores e da internet. Desde pequeno o que mais gosto de fazer é ficar no computador, especialmente no universo dos jogos online.
 > 
 > Eu lembro com muita nostalgia das amizades que fiz nestes jogos, a maioria era estrangeiros. A imersão no universo dos jogos me deixou com um bom nível de escrita e leitura em inglês ainda no ensino fundamental.
@@ -1666,32 +1659,32 @@ _It’s all Chromium!_
 
 > [!quote]- 2022 - Essas imagens foram geradas por IA
 > 
-> [https://www.linkedin.com/pulse/essas-paisagens-foram-geradas-por-ia-celso-takeshi-hamasaki/?trackingId=rMQcdFV5Tukva0K0yFbAxQ%3D%3D](https://www.linkedin.com/pulse/essas-paisagens-foram-geradas-por-ia-celso-takeshi-hamasaki/?trackingId=rMQcdFV5Tukva0K0yFbAxQ%3D%3D)  
+> [Artigo: Paisagens geradas por IA no NovelAI](https://www.linkedin.com/pulse/essas-paisagens-foram-geradas-por-ia-celso-takeshi-hamasaki/?trackingId=rMQcdFV5Tukva0K0yFbAxQ%3D%3D)  
 >   
-> 
+>
 > O site [NovelAi.net](https://novelai.net/) é maravilhoso.Feito originalmente para criar histórias no formato de light novel através da inteligência artificial, os desenvolvedores foram além e agora podemos gerar as ilustrações que quisermos, basta apenas colocar palavras chaves.
 > 
 > Nenhuma das imagens que estou anexando aqui foram desenhadas por um humano.
 > 
-> [![Paisagem de anime gerada por IA NovelAI](https://media.licdn.com/dms/image/v2/D4D12AQEaY4iuPcG4sA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418105842?e=1764201600&v=beta&t=r5YhXKc69Q4bwDVhZ2d_ednDtlE8JxngbMfjueUT0VU)](https://media.licdn.com/dms/image/v2/D4D12AQEaY4iuPcG4sA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418105842?e=1764201600&v=beta&t=r5YhXKc69Q4bwDVhZ2d_ednDtlE8JxngbMfjueUT0VU)
+> [![Ilustração NovelAI - paisagem 1](https://media.licdn.com/dms/image/v2/D4D12AQEaY4iuPcG4sA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418105842?e=1764201600&v=beta&t=r5YhXKc69Q4bwDVhZ2d_ednDtlE8JxngbMfjueUT0VU)](https://media.licdn.com/dms/image/v2/D4D12AQEaY4iuPcG4sA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418105842?e=1764201600&v=beta&t=r5YhXKc69Q4bwDVhZ2d_ednDtlE8JxngbMfjueUT0VU)
 > 
-> [![Paisagem de anime gerada por IA NovelAI](https://media.licdn.com/dms/image/v2/D4D12AQHeHi7A7NNjdw/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418135206?e=1764201600&v=beta&t=BTKbNm2kqDc76zwOHEOgCJZ85MiiVcM1IiO2kjUrXOI)](https://media.licdn.com/dms/image/v2/D4D12AQHeHi7A7NNjdw/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418135206?e=1764201600&v=beta&t=BTKbNm2kqDc76zwOHEOgCJZ85MiiVcM1IiO2kjUrXOI)
+> [![Ilustração NovelAI - paisagem 2](https://media.licdn.com/dms/image/v2/D4D12AQHeHi7A7NNjdw/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418135206?e=1764201600&v=beta&t=BTKbNm2kqDc76zwOHEOgCJZ85MiiVcM1IiO2kjUrXOI)](https://media.licdn.com/dms/image/v2/D4D12AQHeHi7A7NNjdw/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418135206?e=1764201600&v=beta&t=BTKbNm2kqDc76zwOHEOgCJZ85MiiVcM1IiO2kjUrXOI)
 > 
-> [![Paisagem de anime gerada por IA NovelAI](https://media.licdn.com/dms/image/v2/D4D12AQF1HEhYselc1Q/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418151581?e=1764201600&v=beta&t=NhtAAMgdn3zTuG0KkMFDK2TZtfPEuIqm6yzCXtsjUJM)](https://media.licdn.com/dms/image/v2/D4D12AQF1HEhYselc1Q/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418151581?e=1764201600&v=beta&t=NhtAAMgdn3zTuG0KkMFDK2TZtfPEuIqm6yzCXtsjUJM)
+> [![Ilustração NovelAI - paisagem 3](https://media.licdn.com/dms/image/v2/D4D12AQF1HEhYselc1Q/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418151581?e=1764201600&v=beta&t=NhtAAMgdn3zTuG0KkMFDK2TZtfPEuIqm6yzCXtsjUJM)](https://media.licdn.com/dms/image/v2/D4D12AQF1HEhYselc1Q/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418151581?e=1764201600&v=beta&t=NhtAAMgdn3zTuG0KkMFDK2TZtfPEuIqm6yzCXtsjUJM)
 > 
-> [![Paisagem de anime gerada por IA NovelAI](https://media.licdn.com/dms/image/v2/D4D12AQEbtFUAXrkZhQ/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418161073?e=1764201600&v=beta&t=HJFM3t0AdzpSb2LgHPm792hf4yejXeMR-Lm9P9gEDNs)](https://media.licdn.com/dms/image/v2/D4D12AQEbtFUAXrkZhQ/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418161073?e=1764201600&v=beta&t=HJFM3t0AdzpSb2LgHPm792hf4yejXeMR-Lm9P9gEDNs)
+> [![Ilustração NovelAI - paisagem 4](https://media.licdn.com/dms/image/v2/D4D12AQEbtFUAXrkZhQ/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418161073?e=1764201600&v=beta&t=HJFM3t0AdzpSb2LgHPm792hf4yejXeMR-Lm9P9gEDNs)](https://media.licdn.com/dms/image/v2/D4D12AQEbtFUAXrkZhQ/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418161073?e=1764201600&v=beta&t=HJFM3t0AdzpSb2LgHPm792hf4yejXeMR-Lm9P9gEDNs)
 > 
-> [![Paisagem de anime gerada por IA NovelAI](https://media.licdn.com/dms/image/v2/D4D12AQFbge03wyWPuw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418171986?e=1764201600&v=beta&t=aFCiN4GnWkutG4g6ZjZKCHD4Xkx_oGyygiVCSbtGV5A)](https://media.licdn.com/dms/image/v2/D4D12AQFbge03wyWPuw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418171986?e=1764201600&v=beta&t=aFCiN4GnWkutG4g6ZjZKCHD4Xkx_oGyygiVCSbtGV5A)
+> [![Ilustração NovelAI - paisagem 5](https://media.licdn.com/dms/image/v2/D4D12AQFbge03wyWPuw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418171986?e=1764201600&v=beta&t=aFCiN4GnWkutG4g6ZjZKCHD4Xkx_oGyygiVCSbtGV5A)](https://media.licdn.com/dms/image/v2/D4D12AQFbge03wyWPuw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418171986?e=1764201600&v=beta&t=aFCiN4GnWkutG4g6ZjZKCHD4Xkx_oGyygiVCSbtGV5A)
 > 
-> [![Paisagem de anime gerada por IA NovelAI](https://media.licdn.com/dms/image/v2/D4D12AQE2z3644PL7hg/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418183961?e=1764201600&v=beta&t=s3b9j5wKJGV7KQqz9IwFFHBFvnJHRoRKpXNfrGFSCgo)](https://media.licdn.com/dms/image/v2/D4D12AQE2z3644PL7hg/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418183961?e=1764201600&v=beta&t=s3b9j5wKJGV7KQqz9IwFFHBFvnJHRoRKpXNfrGFSCgo)
+> [![Ilustração NovelAI - paisagem 6](https://media.licdn.com/dms/image/v2/D4D12AQE2z3644PL7hg/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418183961?e=1764201600&v=beta&t=s3b9j5wKJGV7KQqz9IwFFHBFvnJHRoRKpXNfrGFSCgo)](https://media.licdn.com/dms/image/v2/D4D12AQE2z3644PL7hg/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418183961?e=1764201600&v=beta&t=s3b9j5wKJGV7KQqz9IwFFHBFvnJHRoRKpXNfrGFSCgo)
 > 
-> [![Paisagem de anime gerada por IA NovelAI](https://media.licdn.com/dms/image/v2/D4D12AQGFoG5r69j2sw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418194620?e=1764201600&v=beta&t=fxt_MOt-DEfHxiOfuMQ7hhC769OaMMGdrrRkZxHlb8E)](https://media.licdn.com/dms/image/v2/D4D12AQGFoG5r69j2sw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418194620?e=1764201600&v=beta&t=fxt_MOt-DEfHxiOfuMQ7hhC769OaMMGdrrRkZxHlb8E)
+> [![Ilustração NovelAI - paisagem 7](https://media.licdn.com/dms/image/v2/D4D12AQGFoG5r69j2sw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418194620?e=1764201600&v=beta&t=fxt_MOt-DEfHxiOfuMQ7hhC769OaMMGdrrRkZxHlb8E)](https://media.licdn.com/dms/image/v2/D4D12AQGFoG5r69j2sw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418194620?e=1764201600&v=beta&t=fxt_MOt-DEfHxiOfuMQ7hhC769OaMMGdrrRkZxHlb8E)
 > 
-> [![Paisagem de anime gerada por IA NovelAI](https://media.licdn.com/dms/image/v2/D4D12AQFf-3OyJxq-Xw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418209926?e=1764201600&v=beta&t=B2QBCPwIV7NnEE_cvClhSaZbvOv9ZFOfddJouPf76Fk)](https://media.licdn.com/dms/image/v2/D4D12AQFf-3OyJxq-Xw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418209926?e=1764201600&v=beta&t=B2QBCPwIV7NnEE_cvClhSaZbvOv9ZFOfddJouPf76Fk)
+> [![Ilustração NovelAI - paisagem 8](https://media.licdn.com/dms/image/v2/D4D12AQFf-3OyJxq-Xw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418209926?e=1764201600&v=beta&t=B2QBCPwIV7NnEE_cvClhSaZbvOv9ZFOfddJouPf76Fk)](https://media.licdn.com/dms/image/v2/D4D12AQFf-3OyJxq-Xw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418209926?e=1764201600&v=beta&t=B2QBCPwIV7NnEE_cvClhSaZbvOv9ZFOfddJouPf76Fk)
 > 
-> [![Paisagem de anime gerada por IA NovelAI](https://media.licdn.com/dms/image/v2/D4D12AQHdokve5-ADEw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418221300?e=1764201600&v=beta&t=svM_ts-n0wquqa-Px_S3xuTVLXQ9p3581WdhYK3b8uc)](https://media.licdn.com/dms/image/v2/D4D12AQHdokve5-ADEw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418221300?e=1764201600&v=beta&t=svM_ts-n0wquqa-Px_S3xuTVLXQ9p3581WdhYK3b8uc)
+> [![Ilustração NovelAI - paisagem 9](https://media.licdn.com/dms/image/v2/D4D12AQHdokve5-ADEw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418221300?e=1764201600&v=beta&t=svM_ts-n0wquqa-Px_S3xuTVLXQ9p3581WdhYK3b8uc)](https://media.licdn.com/dms/image/v2/D4D12AQHdokve5-ADEw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418221300?e=1764201600&v=beta&t=svM_ts-n0wquqa-Px_S3xuTVLXQ9p3581WdhYK3b8uc)
 > 
-> [![Paisagem de anime gerada por IA NovelAI](https://media.licdn.com/dms/image/v2/D4D12AQEzTM8KA8ARyA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418233154?e=1764201600&v=beta&t=lH749gcV8QP3_tFoZZcnGuDEPkVYitOBWgu_Hy0ohKg)](https://media.licdn.com/dms/image/v2/D4D12AQEzTM8KA8ARyA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418233154?e=1764201600&v=beta&t=lH749gcV8QP3_tFoZZcnGuDEPkVYitOBWgu_Hy0ohKg)
+> [![Ilustração NovelAI - paisagem 10](https://media.licdn.com/dms/image/v2/D4D12AQEzTM8KA8ARyA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418233154?e=1764201600&v=beta&t=lH749gcV8QP3_tFoZZcnGuDEPkVYitOBWgu_Hy0ohKg)](https://media.licdn.com/dms/image/v2/D4D12AQEzTM8KA8ARyA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418233154?e=1764201600&v=beta&t=lH749gcV8QP3_tFoZZcnGuDEPkVYitOBWgu_Hy0ohKg)
 > 
 > É como se fosse uma versão cartunista do [this person does not exist](https://thispersondoesnotexist.com/), mas com a liberdade de podermos escolher exatamente como será o resultado final, e não se limitando à pessoas.
 > 
@@ -1703,10 +1696,10 @@ _It’s all Chromium!_
 
 > [!quote]- 2022 - Aprovado na ANCORD - AAI
 > 
-> [https://www.linkedin.com/posts/activity-7000935671007731712-YJ1A?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U](https://www.linkedin.com/posts/activity-7000935671007731712-YJ1A?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
-> 
+> [Post: Aprovado ANCORD AAI](https://www.linkedin.com/posts/activity-7000935671007731712-YJ1A?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
+>
 >   
-> 
+>
 > Aprovado na ANCORD - AAI (Agente Autônomo de Investimento)
 > 
 > Confesso não ter estudado para essa prova, apenas o módulo 01.
@@ -1717,8 +1710,8 @@ _It’s all Chromium!_
 
 > [!quote]- 2022 - Indústria de videogames
 > 
-> [https://www.linkedin.com/posts/activity-7036733062067433472-165z?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U](https://www.linkedin.com/posts/activity-7036733062067433472-165z?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
-> 
+> [Post: Indústria de videogames vs cinema](https://www.linkedin.com/posts/activity-7036733062067433472-165z?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
+>
 > Poucos sabem, mas a indústria de videogames fatura exponencialmente mais do que a indústria de cinema e música somadas.
 > 
 > Para efeitos de comparação:
@@ -1737,7 +1730,7 @@ _It’s all Chromium!_
 
 > [!quote]- 2023 - Criação de IA de streaming que responde comentários ao vivo
 > 
-> [https://www.linkedin.com/posts/activity-7048895664444817408-UpUC/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U](https://www.linkedin.com/posts/activity-7048895664444817408-UpUC/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
+> [Post: IA e avatares para streaming](https://www.linkedin.com/posts/activity-7048895664444817408-UpUC/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
 > 
 >   
 > 
@@ -1760,7 +1753,7 @@ _It’s all Chromium!_
 
 > [!quote]- 2023 - Vtubers e Neuro Sama na Bloomberg?!
 > 
-> [https://www.linkedin.com/pulse/vtubers-e-neuro-sama-na-bloomberg-celso-takeshi-hamasaki/?trackingId=K0Y%2Fi0ML1TSI4ZTKjycXNA%3D%3D](https://www.linkedin.com/pulse/vtubers-e-neuro-sama-na-bloomberg-celso-takeshi-hamasaki/?trackingId=K0Y%2Fi0ML1TSI4ZTKjycXNA%3D%3D)
+> [Artigo: Vtubers e Neuro-sama na Bloomberg](https://www.linkedin.com/pulse/vtubers-e-neuro-sama-na-bloomberg-celso-takeshi-hamasaki/?trackingId=K0Y%2Fi0ML1TSI4ZTKjycXNA%3D%3D)
 > 
 > Os VTubers têm ganhado grande popularidade e atraindo investimentos bilionários.
 > 
@@ -1787,11 +1780,11 @@ _It’s all Chromium!_
 > https://www.bloomberg.com/news/articles/2019-09-17/how-virtual-streamers-became-japan-s-biggest-youtube-attraction
 
 > [!quote]- 2023 - Clonei minha voz com RVC v2
-> 
-> [https://www.linkedin.com/pulse/vtubers-e-neuro-sama-na-bloomberg-celso-takeshi-hamasaki/?trackingId=K0Y%2Fi0ML1TSI4ZTKjycXNA%3D%3D](https://www.linkedin.com/pulse/vtubers-e-neuro-sama-na-bloomberg-celso-takeshi-hamasaki/?trackingId=K0Y%2Fi0ML1TSI4ZTKjycXNA%3D%3D)
-> 
+>
+> [Artigo: Vtubers e Neuro-sama na Bloomberg — ver no LinkedIn](https://www.linkedin.com/pulse/vtubers-e-neuro-sama-na-bloomberg-celso-takeshi-hamasaki/?trackingId=K0Y%2Fi0ML1TSI4ZTKjycXNA%3D%3D)
+>
 >   
-> 
+>
 > Clonei a minha própria voz usando IA com RVC v2.
 > 
 > Gravei textos aleatórios e dividi em áudios de até 10 segundos usando um  
@@ -1826,8 +1819,8 @@ _It’s all Chromium!_
 
 > [!quote]- 2023 - Evite falar “gringo”
 > 
-> [https://www.linkedin.com/posts/activity-7094835749094596608-N-P2?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U](https://www.linkedin.com/posts/activity-7094835749094596608-N-P2?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)  
-> 
+> [Post: Evite falar gringo ao se referir a estrangeiros](https://www.linkedin.com/posts/activity-7094835749094596608-N-P2?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)  
+>
 > Evite usar "gringo" ao se referir a estrangeiros.
 > 
 > Durante minha graduação em Relações Internacionais, participei de aulas com intercambistas no Módulo Internacional e aprendi que essa palavra pode ser interpretada como pejorativa em vários países.
@@ -1840,8 +1833,8 @@ _It’s all Chromium!_
 
 > [!quote]- 2023 - História de Zhu
 > 
-> [https://www.linkedin.com/posts/activity-7094938830755012608-jXtS?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U](https://www.linkedin.com/posts/activity-7094938830755012608-jXtS?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)  
-> 
+> [Post: História do Zhu, bombeiro tetraplégico e streamer](https://www.linkedin.com/posts/activity-7094938830755012608-jXtS?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)  
+>
 > Um amigo meu, que é chinês e professor de inglês na China, compartilhou comigo a história de Zhu.
 > 
 > Zhu, no passado, exercia a nobre função de bombeiro na China, até que um acidente há 8 anos o deixou tetraplégico. Consumido pela dor, ele chegou a considerar o fim de sua própria vida.
@@ -1870,10 +1863,10 @@ _It’s all Chromium!_
 
 > [!quote]- 2024 - Estudo britânico associa aumento dos juros com saúde mental
 > 
-> [https://www.linkedin.com/posts/activity-7157111382935580672-4zXX?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U](https://www.linkedin.com/posts/activity-7157111382935580672-4zXX?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
-> 
+> [Post: Juros e saúde mental — estudo britânico](https://www.linkedin.com/posts/activity-7157111382935580672-4zXX?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
+>
 >   
-> 
+>
 > Li um estudo britânico que afirma que o aumento dos juros está associado a problemas de saúde mental na população.
 > 
 > Para as pessoas altamente endividadas, cada aumento de 1% na taxa de juros aumenta o risco de doenças psiquiátricas em 2,6%.
@@ -1886,10 +1879,10 @@ _It’s all Chromium!_
 
 > [!quote]- 2024 - Entrevista de Henry Kissinger
 > 
-> [https://www.linkedin.com/posts/activity-7159074246680297472-XfBD?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U](https://www.linkedin.com/posts/activity-7159074246680297472-XfBD?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
-> 
+> [Post: Entrevista Kissinger — como evitar 3ª guerra mundial](https://www.linkedin.com/posts/activity-7159074246680297472-XfBD?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
+>
 >   
-> 
+>
 > Conversa do The Economist com Kissinger, meses antes de sua morte, sobre como evitar uma terceira guerra mundial.
 > 
 > Alguns pontos:
@@ -1924,14 +1917,14 @@ _It’s all Chromium!_
 > 
 >   
 > 
-> [https://www.economist.com/briefing/2023/05/17/henry-kissinger-explains-how-to-avoid-world-war-three](https://www.economist.com/briefing/2023/05/17/henry-kissinger-explains-how-to-avoid-world-war-three)
+> [The Economist: Kissinger — como evitar uma 3ª guerra mundial](https://www.economist.com/briefing/2023/05/17/henry-kissinger-explains-how-to-avoid-world-war-three)
 
 > [!quote]- 2024 - Recomendação de livro
 > 
-> [https://www.linkedin.com/posts/activity-7165425917610209281-syXS?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U](https://www.linkedin.com/posts/activity-7165425917610209281-syXS?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
-> 
+> [Post: Livro Aiming High — Masayoshi Son e SoftBank](https://www.linkedin.com/posts/activity-7165425917610209281-syXS?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
+>
 >   
-> 
+>
 > Em 2021, comentei sobre o interesse do SoftBank na IA, pois Masayoshi Son, a quem admiro muito, é um entusiasta dessas tecnologias, assim como eu.
 > 
 > Recomendei o livro sobre ele, escrito por Atsuo Inoue, no Twitter no início do ano passado: "Aiming High: Masayoshi Son, SoftBank, and Disrupting Silicon Valley".
@@ -1943,8 +1936,8 @@ _It’s all Chromium!_
 
 > [!quote]- 2024 - Acordo de gás natural entre China e Rússia
 > 
-> [https://www.linkedin.com/posts/activity-7216232343752044544-312E?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U](https://www.linkedin.com/posts/activity-7216232343752044544-312E?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
-> 
+> [Post: Acordo de gás natural China e Rússia](https://www.linkedin.com/posts/activity-7216232343752044544-312E?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
+>
 > Há dez anos, a Rússia e a China firmaram um acordo histórico de fornecimento de gás natural  
 > avaliado em US$ 400 bilhões por 30 anos.
 > 
@@ -1956,8 +1949,8 @@ _It’s all Chromium!_
 
 > [!quote]- 2024 - Curva de Yerkes-Dodson
 > 
-> [https://www.linkedin.com/posts/activity-7218384054285443072-fD3Z?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U](https://www.linkedin.com/posts/activity-7218384054285443072-fD3Z?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
-> 
+> [Post: Curva de Yerkes-Dodson e produtividade](https://www.linkedin.com/posts/activity-7218384054285443072-fD3Z?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
+>
 > Você já se perguntou por que às vezes um pouco de pressão melhora seu desempenho, mas muita pressão o prejudica? A resposta está na Curva de Yerkes-Dodson.
 > 
 > Esta teoria, desenvolvida pelos psicólogos Robert Yerkes e John Dodson em  
@@ -1981,10 +1974,10 @@ _It’s all Chromium!_
 
 > [!quote]- 2024 - Japão como país soberano?
 > 
-> [https://www.linkedin.com/posts/activity-7223601076850065409-sW_d?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U](https://www.linkedin.com/posts/activity-7223601076850065409-sW_d?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
-> 
+> [Post: Japão como país soberano e Artigo 9º](https://www.linkedin.com/posts/activity-7223601076850065409-sW_d?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
+>
 >   
-> 
+>
 > Desde os tempos de graduação, tenho analisado os desafios geopolíticos enfrentados pelo  
 > Japão na sua continuidade como país soberano.
 > 
@@ -2007,8 +2000,8 @@ _It’s all Chromium!_
 
 > [!quote]- 2024 - Python é lento e gasta energia demais
 > 
-> [https://www.linkedin.com/posts/activity-7239262691909918720-Ao4R?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U](https://www.linkedin.com/posts/activity-7239262691909918720-Ao4R?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
-> 
+> [Post: Python vs C — consumo de energia e velocidade](https://www.linkedin.com/posts/activity-7239262691909918720-Ao4R?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
+>
 > Python é 72x mais lento e usa 76x mais energia que C.
 > 
 > Python é uma linguagem muito procurada por ser fácil de aprender.
@@ -2059,8 +2052,8 @@ _It’s all Chromium!_
 
 > [!quote]- 2024 - O governo errou o RG
 > 
-> [https://www.linkedin.com/posts/activity-7260649577869889536-Nqzq?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U](https://www.linkedin.com/posts/activity-7260649577869889536-Nqzq?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
-> 
+> [Post: Erro de digitação Nacionality no novo RG](https://www.linkedin.com/posts/activity-7260649577869889536-Nqzq?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
+>
 > Fiz o novo RG e reparei que nacionalidade está escrito errado em inglês. 'Nacionality' ao invés de 'Nationality'.
 > 
 > Pode ser algo bobo, mas eu acho que o documento oficial de identificação estar escrito errado é grotesco.
@@ -2069,8 +2062,8 @@ _It’s all Chromium!_
 
 > [!quote]- 2025 - Aprovado na AWS CCP!
 > 
-> [https://www.linkedin.com/posts/activity-7316396736376135681-GuLh?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U](https://www.linkedin.com/posts/activity-7316396736376135681-GuLh?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
-> 
+> [Post: Aprovado AWS Certified Cloud Practitioner](https://www.linkedin.com/posts/activity-7316396736376135681-GuLh?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
+>
 > Aprovado na AWS Certified Cloud Practitioner!
 > 
 >   
@@ -2079,8 +2072,8 @@ _It’s all Chromium!_
 
 > [!quote]- 2025 - Ubuntu apenas na RAM
 > 
-> [https://www.linkedin.com/posts/activity-7320927918442921984-Ui0p?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U](https://www.linkedin.com/posts/activity-7320927918442921984-Ui0p?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
-> 
+> [Post: Ubuntu rodando inteiramente na RAM](https://www.linkedin.com/posts/activity-7320927918442921984-Ui0p?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
+>
 > Compartilho um procedimento que venho usando para configurar um sistema Ubuntu a ser carregado e executado inteiramente a partir da memória RAM após a inicialização.
 > 
 > Para os exeprientes, favor deixar nos comentários melhorias!
@@ -2088,7 +2081,7 @@ _It’s all Chromium!_
 > Esta configuração resulta num desempenho de I/O extremamente elevado (mais  
 > rápido do que ssds nvme) para operações de leitura e escrita após o carregamento inicial do sistema. Os dados não persistem após a desligamento do sistema, sendo uma configuração que é valiosa em ambientes corporativos que processam informações sensíveis, tipo alguns provedores VPN.
 > 
-> ***As etapas descritas abaixo envolvem a modificação de arquivos críticos do sistema e do processo de inicialização. A execução destes comandos pode resultar em um sistema não inicializável e perda de dados.**
+> ***Aviso:*** Modificar GRUB e initramfs pode tornar o sistema não inicializável e causar perda de dados. Use por sua conta e risco.
 > 
 > ***Recomendado no mínimo 16gb de ram, idealmente mais que 32gb**
 > 
@@ -2147,8 +2140,8 @@ _It’s all Chromium!_
 
 > [!quote]- 2025 - Conclusão MBA em Macroeconomia & Portfolio Management!
 > 
-> [https://www.linkedin.com/posts/activity-7368318932874575874-hFoj?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U](https://www.linkedin.com/posts/activity-7368318932874575874-hFoj?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
-> 
+> [Post: Conclusão MBA Macroeconomia e Portfolio Management](https://www.linkedin.com/posts/activity-7368318932874575874-hFoj?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYXrgIBLDrXP9mFWnVcWFiicCEApZIj87U)
+>
 > Consegui terminar meu MBA em Macroeconomia & Portfolio Management!
 > 
 > Foram 391 horas de mto estudo e aprendizado.
