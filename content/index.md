@@ -185,6 +185,372 @@ _It’s all Chromium!_
 
 >[!important] Rascunhos rápidos e sem formalidades.
 
+> [!note]- A Devassa Digital em Brasília, Banco Master e Cellebrite (+ Toolset Pessoal)
+>
+> ultimamente ta todo mundo em brasilia surtando com a tal "devassa digital" e o uso do **Cellebrite Premium**. mas sera q eh tudo isso mesmo? ou eh so *hype* pra assustar?
+>
+> como especialista em segurança que lida diariamente com **dados bancários confidenciais** e **acessos restritos a servidores**, eu sei que confiar na sorte nao adianta. por isso, resolvi explicar o que eh real e compartilhar a ferramenta que eu mesmo codei pra garantir que meu cache nunca seja lido por ninguem.
+>
+> ### O que eh o Cellebrite?
+>
+> a cellebrite eh uma empresa de israel q vende o **UFED** e o **Premium**. basicamente, eh um kit de hacking legalizado q a policia usa.
+>
+> eles nao precisam da senha do usuario pra entrar. eles exploram falhas de segurança (*zero-days*) q nem a apple ou o google corrigiram ainda.
+>
+> - **Foco:** o forte deles eh **MOBILE**. eles conseguem extrair tudo: zap, fotos, localizacao e arquivos deletados.
+> - **Custo:** nao eh "por uso". a policia paga uma licença milionaria "unlimited". ou seja, eles podem plugar 100 celulares num dia e desbloquear todos sem pagar extra.
+>
+> ### A lenda da "Gaiola quebra senha"
+>
+> a midia fala mto da **Gaiola de Faraday**, mas explicam tudo errado.
+>
+> colocar o celular na gaiola **NAO** quebra a criptografia. a gaiola so bloqueia o sinal (4g/wifi). pra que serve entao?
+>
+> 1. **Evitar o Remote Wipe:** pro dono (ou comparsa) nao mandar um comando remoto pra apagar o celular.
+> 2. **Evitar Bloqueio:** alguns celulares bloqueiam certas portas de dados se conectarem na rede.
+>
+> entao a gaiola eh so pra segurar o celular "vivo" ate o cellebrite ser plugado.
+>
+> ### Senha vs Biometria (Rosto/Dedo)
+>
+> aqui ta o maior erro das pessoas: achar q face id eh mais seguro. **nao eh!**
+>
+> a biometria eh *conveniente*, mas eh insegura fisicamente. numa batida policial ou assalto, podem forçar seu dedo no sensor ou colocar o cel na sua cara.
+>
+> **A Regra de Ouro:**
+> - **Biometria:** facil de burlar com força fisica.
+> - **Senha Alfanumerica:** impossivel de forçar (vc pode "esquecer" ou se recusar a falar).
+>
+> > **Dica Pro (Modo Panico):** se achar q vai perder o cel, segure o **power + volume** (iphone) ou **lockdown mode** (android). isso desativa a biometria na hora e so libera com a senha!
+>
+> ### A Ilusão da Nuvem (Google Drive não é cofre!)
+>
+> essa é clássica. "ah, mas meu google drive é criptografado".
+>
+> **Errou feio.** O Google (e Dropbox, OneDrive, iCloud padrão) usa criptografia *Server-Side*. Isso significa que eles embaralham seus arquivos, mas **eles também guardam a chave para desembaralhar**.
+>
+> se um funcionário quiser, ou um invasor conseguir acesso, ele descriptografa e pega tudo. Seus dados estão "trancados", mas a chave tá na portaria do prédio, não no seu bolso.
+>
+> **O Jeito Certo (Client-Side Encryption):**
+> no meu setup (usando AWS S3 e outros object storages seguros), eu uso minha própria chave de criptografia.
+>
+> Se você não tem a chave privada (Client-Side), vc não tem segurança.
+>
+> ### O "Fantasma" do Navegador (Cache)
+>
+> mta gente acha q fechar a aba resolve. burrice!
+>
+> quando vc navega, o chrome/firefox baixa imagens, scripts e pedaços de paginas pro seu pc pra carregar mais rapido depois. isso eh o **Cache**.
+>
+> a pericia forense ama isso. mesmo q vc nao tenha o historico salvo, eles podem reconstruir o q vc viu (imagens, videos, textos) so analisando a pasta de cache do sistema. ate thumbnails q vc viu no windows explorer ficam salvas num arquivo chamado `thumbs.db` ou `iconcache` pra sempre, mesmo se vc deletar o arquivo original!
+>
+> ### "Deletar" não é "Sumir"
+>
+> essa parte eh perigosa.
+>
+> quando vc clica em "Deletar" e esvazia a lixeira, o windows/linux **NAO apaga o arquivo**. ele so vai na tabela de endereços do disco e marca aquele espaço como "livre pra escrever em cima".
+>
+> mas os dados (os zeros e uns) continuam la intactos ate q vc grave outra coisa por cima. ferramentas simples recuperam isso em segundos.
+>
+> ### SSD vs HDD: Como limpar de verdade?
+>
+> pra se proteger disso, a tecnica muda dependendo do disco:
+>
+> **No HDD (Disco Rigido antigo):**
+> - a unica solucao eh **sobrescrever** (escrever zeros ou lixo por cima).
+>
+> **No SSD (Discos modernos):**
+> - **NAO use shred comum!** sobrescrever ssd estraga a vida util dele e nao garante q apagou (por causa do *wear leveling*).
+> - a solucao eh o comando **TRIM / BLKDISCARD** ou **Crypto-Shredding** (explicado abaixo).
+>
+> ### O ataque "Cold Boot" e a RAM
+>
+> por fim, se vc usa criptografia no pc (Bitlocker/LUKS), **nunca deixe em suspender/sleep**.
+>
+> enquanto o pc ta ligado (mesmo com tela bloqueada), a chave da criptografia fica escrita na **Memoria RAM** em texto puro. a policia usa o **Cold Boot Attack**: jogam spray congelante na memoria RAM, arrancam ela e leem os dados em outro lugar antes da energia sumir.
+>
+> ---
+>
+> ### "Crypto-Wiper" In-Loco (C Code)
+>
+> como eu trabalho com programação crítica, eu não posso confiar no "delete" do sistema operacional.
+>
+> por isso, codei minha própria ferramenta em **C** usando a biblioteca **OpenSSL**.
+>
+> **Como funciona:**
+> O programa não "apaga" o arquivo. Ele abre o arquivo no lugar onde ele está (*in-place*), gera uma chave **AES-256** aleatória, encripta todo o conteúdo transformando em ruído digital, e depois **joga a chave fora**.
+>
+> O resultado? O arquivo continua lá ocupando espaço, mas o conteúdo é matematicamente irrecuperável. É mais seguro e rápido que ficar escrevendo zeros.
+>
+> #### O Código Fonte (Use com cuidado!)
+>
+> Tenho duas versões. Uma gráfica (pra selecionar arquivos manuais) e uma CLI (que roda no boot limpando meu cache).
+>
+> **Versão 1: GUI (Selecionar Arquivos)**
+> *Requer: libgtk-3-dev libssl-dev*
+>
+> ```c
+> #include <gtk/gtk.h>
+> #include <openssl/evp.h>
+> #include <openssl/rand.h>
+> #include <openssl/crypto.h>
+> #include <fcntl.h>
+> #include <unistd.h>
+> #include <sys/stat.h>
+> #include <stdio.h>
+> #include <stdlib.h>
+> #include <string.h>
+> #include <errno.h>
+>
+> #define CHUNK_SIZE 65536  // 64 KB por iteração
+>
+> // Função que faz a cifra in-place do arquivo usando AES-256-CTR
+> int encrypt_file_inplace(const char *filename) {
+>     int rc = 1, fd = -1;
+>     EVP_CIPHER_CTX *ctx = NULL;
+>     unsigned char key[32], iv[16];
+>     unsigned char *inbuf = NULL, *outbuf = NULL;
+>     struct stat st;
+>     ssize_t bytes_read, bytes_written;
+>     off_t offset = 0;
+>     int outlen;
+>
+>     // 1) Gerar chave e IV aleatórios
+>     if (!RAND_bytes(key, sizeof(key)) || !RAND_bytes(iv, sizeof(iv))) {
+>         fprintf(stderr, "Erro ao gerar chave/IV\n");
+>         goto cleanup;
+>     }
+>
+>     // 2) Inicializar contexto AES-256-CTR
+>     ctx = EVP_CIPHER_CTX_new();
+>     if (!ctx ||
+>         EVP_EncryptInit_ex(ctx, EVP_aes_256_ctr(), NULL, key, iv) != 1) {
+>         fprintf(stderr, "Erro ao inicializar contexto de cifra\n");
+>         goto cleanup;
+>     }
+>
+>     // 3) Abrir arquivo para leitura/escrita
+>     fd = open(filename, O_RDWR);
+>     if (fd < 0) {
+>         fprintf(stderr, "Não foi possível abrir '%s': %s\n", filename, strerror(errno));
+>         goto cleanup;
+>     }
+>     if (fstat(fd, &st) < 0) {
+>         fprintf(stderr, "Erro ao obter tamanho de '%s': %s\n", filename, strerror(errno));
+>         goto cleanup;
+>     }
+>
+>     // 4) Alocar buffers de entrada e saída
+>     inbuf  = malloc(CHUNK_SIZE);
+>     outbuf = malloc(CHUNK_SIZE + EVP_CIPHER_block_size(EVP_aes_256_ctr()));
+>     if (!inbuf || !outbuf) {
+>         fprintf(stderr, "Memória insuficiente\n");
+>         goto cleanup;
+>     }
+>
+>     // 5) Ler/encriptar/escrever em chunks
+>     while (offset < st.st_size) {
+>         size_t to_read = (st.st_size - offset > CHUNK_SIZE)
+>                             ? CHUNK_SIZE
+>                             : (size_t)(st.st_size - offset);
+>         bytes_read = pread(fd, inbuf, to_read, offset);
+>         if (bytes_read <= 0) {
+>             fprintf(stderr, "Erro de leitura em '%s'\n", filename);
+>             goto cleanup;
+>         }
+>         if (EVP_EncryptUpdate(ctx, outbuf, &outlen, inbuf, bytes_read) != 1) {
+>             fprintf(stderr, "Erro de cifra em '%s'\n", filename);
+>             goto cleanup;
+>         }
+>         bytes_written = pwrite(fd, outbuf, outlen, offset);
+>         if (bytes_written != outlen) {
+>             fprintf(stderr, "Erro de escrita em '%s'\n", filename);
+>             goto cleanup;
+>         }
+>         offset += bytes_read;
+>     }
+>
+>     // 6) Finalizar cifra
+>     if (EVP_EncryptFinal_ex(ctx, outbuf, &outlen) != 1) {
+>         fprintf(stderr, "Erro no final da cifra em '%s'\n", filename);
+>         goto cleanup;
+>     }
+>     if (outlen > 0) {
+>         if (pwrite(fd, outbuf, outlen, offset) != outlen) {
+>             fprintf(stderr, "Erro de escrita final em '%s'\n", filename);
+>             goto cleanup;
+>         }
+>     }
+>
+>     fsync(fd);  // garantir gravação no disco
+>     rc = 0;     // sucesso
+>
+> cleanup:
+>     if (fd >= 0) close(fd);
+>     if (ctx)    EVP_CIPHER_CTX_free(ctx);
+>     if (inbuf) {
+>         OPENSSL_cleanse(inbuf, CHUNK_SIZE);
+>         free(inbuf);
+>     }
+>     if (outbuf) {
+>         OPENSSL_cleanse(outbuf, CHUNK_SIZE + EVP_CIPHER_block_size(EVP_aes_256_ctr()));
+>         free(outbuf);
+>     }
+>     OPENSSL_cleanse(key, sizeof(key)); // Destroi a chave pra sempre!
+>     OPENSSL_cleanse(iv,  sizeof(iv));
+>     return rc;
+> }
+>
+> // Callback chamado após o usuário selecionar arquivos
+> static void on_response(GtkDialog *dialog, gint response_id, gpointer user_data) {
+>     if (response_id == GTK_RESPONSE_ACCEPT) {
+>         GSList *files = gtk_file_chooser_get_filenames(GTK_FILE_CHOOSER(dialog));
+>         for (GSList *it = files; it; it = it->next) {
+>             char *fname = it->data;
+>             if (encrypt_file_inplace(fname) == 0)
+>                 g_print(">>> '%s' criptografado com sucesso.\n", fname);
+>             else
+>                 g_print(">>> Falha ao criptografar '%s'.\n", fname);
+>             g_free(fname);
+>         }
+>         g_slist_free(files);
+>     }
+>     gtk_widget_destroy(GTK_WIDGET(dialog));
+>     gtk_main_quit();
+> }
+>
+> int main(int argc, char *argv[]) {
+>     GtkWidget *dlg;
+>     gtk_init(&argc, &argv);
+>     dlg = gtk_file_chooser_dialog_new(
+>         "Selecione arquivos para criptografar (WIPE)",
+>         NULL,
+>         GTK_FILE_CHOOSER_ACTION_OPEN,
+>         "_Cancelar", GTK_RESPONSE_CANCEL,
+>         "_Abrir",    GTK_RESPONSE_ACCEPT,
+>         NULL
+>     );
+>     gtk_file_chooser_set_select_multiple(GTK_FILE_CHOOSER(dlg), TRUE);
+>     g_signal_connect(dlg, "response", G_CALLBACK(on_response), NULL);
+>     gtk_widget_show_all(dlg);
+>     gtk_main();
+>     return 0;
+> }
+> ```
+>
+> **Versão 2: O Limpador de Cache (CLI)**
+> Esse script roda na inicialização e varre minha pasta `~/.cache`, encriptando tudo o que acha pela frente.
+>
+> ```c
+> /*
+>  * in_place_wipe.c
+>  * Compilar: gcc -O2 -Wall in_place_wipe.c -o in_place_wipe -lcrypto
+>  */
+>
+> #define _XOPEN_SOURCE 700
+> #include <ftw.h>
+> #include <openssl/evp.h>
+> #include <openssl/rand.h>
+> #include <openssl/err.h>
+> #include <limits.h>
+> #include <stdio.h>
+> #include <stdlib.h>
+> #include <stdint.h>
+> #include <unistd.h>
+> #include <string.h>
+> #include <errno.h>
+> #include <sys/stat.h>
+>
+> #define CHUNK_SIZE 65536
+> #define KEY_LEN    32
+> #define IV_LEN     16
+>
+> static int process_file(const char *fpath, const struct stat *sb, int tflag, struct FTW *ftwbuf) {
+>     if (tflag != FTW_F) return 0;
+>     FILE *f = fopen(fpath, "r+b"); // Abre para leitura e escrita binária
+>     if (!f) return 0;
+>
+>     uint8_t key[KEY_LEN], iv[IV_LEN];
+>     // Gera chaves aleatórias para CADA arquivo
+>     if (RAND_bytes(key, KEY_LEN)!=1 || RAND_bytes(iv, IV_LEN)!=1) {
+>         fclose(f);
+>         return 0;
+>     }
+>
+>     EVP_CIPHER_CTX *ctx = EVP_CIPHER_CTX_new();
+>     if (!ctx ||
+>         EVP_EncryptInit_ex(ctx, EVP_aes_256_ctr(), NULL, key, iv)!=1) {
+>         if (ctx) EVP_CIPHER_CTX_free(ctx);
+>         OPENSSL_cleanse(key, KEY_LEN);
+>         OPENSSL_cleanse(iv, IV_LEN);
+>         fclose(f);
+>         return 0;
+>     }
+>
+>     uint8_t *inbuf  = malloc(CHUNK_SIZE);
+>     uint8_t *outbuf = malloc(CHUNK_SIZE + EVP_CIPHER_block_size(EVP_aes_256_ctr()));
+>     if (!inbuf || !outbuf) goto cleanup_all;
+>
+>     size_t nread;
+>     // Lê bloco, encripta, e escreve de volta no MESMO lugar
+>     while ((nread = fread(inbuf,1,CHUNK_SIZE,f)) > 0) {
+>         int outlen;
+>         if (EVP_EncryptUpdate(ctx, outbuf, &outlen, inbuf, nread)!=1) break;
+>         if (fseek(f, - (long)nread, SEEK_CUR)!=0 ||
+>             fwrite(outbuf,1,outlen,f)!=(size_t)outlen) break;
+>         fflush(f);
+>     }
+>
+> cleanup_all:
+>     EVP_CIPHER_CTX_free(ctx);
+>     if (inbuf)  free(inbuf);
+>     if (outbuf) free(outbuf);
+>     OPENSSL_cleanse(key, KEY_LEN); // Adeus chave!
+>     OPENSSL_cleanse(iv, IV_LEN);
+>     fclose(f);
+>     return 0;
+> }
+>
+> static void wipe_path(const char *path) {
+>     printf("→ Wipando %s\n", path);
+>     nftw(path, process_file, 20, FTW_PHYS);
+> }
+>
+> int main(int argc, char *argv[]) {
+>     OpenSSL_add_all_algorithms();
+>     ERR_load_crypto_strings();
+>
+>     if (argc > 1) {
+>         // usa os caminhos que o usuário passar
+>         for (int i = 1; i < argc; i++) {
+>             if (access(argv[i], R_OK|X_OK) == 0)
+>                 wipe_path(argv[i]);
+>             else
+>                 fprintf(stderr, "⏭  Falha (não existe ou sem permissão): %s\n", argv[i]);
+>         }
+>     } else {
+>         // sem argumentos: faz wipe de toda a pasta ~/.cache
+>         const char *home = getenv("HOME");
+>         if (!home) {
+>             fprintf(stderr, "HOME não definido\n");
+>             return EXIT_FAILURE;
+>         }
+>         char cache_dir[PATH_MAX];
+>         snprintf(cache_dir, sizeof(cache_dir), "%s/.cache", home);
+>         if (access(cache_dir, R_OK|X_OK) == 0)
+>             wipe_path(cache_dir);
+>         else
+>             fprintf(stderr, "⏭  ~/.cache não existe ou sem permissão\n");
+>     }
+>
+>     EVP_cleanup();
+>     ERR_free_strings();
+>     return EXIT_SUCCESS;
+> }
+> ```
+>
+> 
+
 > [!note]- Minhas previsões pro futuro do mundo (Geopolítica)
 >
 > resolvi escrever o que minha intuição diz sobre o que vai acontecer com o mundo nos próximos anos.
