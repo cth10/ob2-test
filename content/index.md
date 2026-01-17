@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-01-17T15:35:50.146-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Cellebrite","Anti-Forense"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-01-17T16:26:43.397-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Cellebrite","Anti-Forense"],"cssclasses":""}
 ---
 
 
@@ -152,7 +152,7 @@ callout, blockquote {
 - **Cloud Gaming**
     - Entusiasta do Shadow PC e GeForce NOW
 
-![[imagens/image.png]]
+![[imagens/meme-astronauta-chromium.png|Meme astronauta it is all chromium sempre foi]]
 
 _It’s all Chromium!_
 
@@ -766,7 +766,7 @@ _It’s all Chromium!_
 > eu to usando a Hostinger. o ping pro brasil eh decente e o preço eh excelente.
 >
 > sou parceiro da hostinger e meu link de indicação da desconto!
-> ![[imagens/hostinger.png]]
+> ![[imagens/hostinger.png|Banner promocional Hostinger VPS]]
 > 👉 [Hostinger](https://hostinger.com.br?REFERRALCODE=BCOMIUNAHEUT)
 >
 > 👉 [KVM 8](https://www.hostinger.com.br/cart?product=vps%3Avps_kvm_8&period=12&referral_type=cart_link&REFERRALCODE=BCOMIUNAHEUT&referral_id=019b829e-065e-70f1-847c-3f3f06a48575)
@@ -806,9 +806,9 @@ _It’s all Chromium!_
 >
 > pronto! agora vc tem um pc na nuvem pra deixar farmando jogo, baixando coisas ou codando de qualquer lugar!
 >
-> ![[imagens/NOMACHINE.png]]
-> ![[imagens/vps-2.png]]
-> ![[imagens/vps-3.png]]
+> ![[imagens/NOMACHINE.png|Interface de conexão do NoMachine]]
+> ![[imagens/vps-2.png|Terminal Linux rodando na VPS Hostinger]]
+> ![[imagens/vps-3.png|Htop rodando na VPS]]
 
 > [!note]- Dumping e Cash Burn
 >
@@ -872,7 +872,7 @@ _It’s all Chromium!_
 >
 > isso fica claro na quantidade de empresas fazendo implementações q nao sao realmente praticas para o nivel da tecnologia atual, apenas para agradar investidores. no mundo real, as pessoas estao cansadas de 'AI slop'. (¬_¬)
 > 
->![[imagens/ai-slop.jpg]]
+>![[imagens/ai-slop.jpg|Meme critica conteúdo gerado por IA AI Slop]]
 
 >[!note]- A primeira coisa que eu faço ao instalar o Windows 11
 >
@@ -885,29 +885,29 @@ _It’s all Chromium!_
 >
 > 1. abra o menu iniciar, digita `powershell` e... mto importante: clica com botao direito em **Executar como Administrador** (senao nao funciona!).
 >
-> ![[imagens/2025-11-30_23-17_1.png]]
+> ![[imagens/2025-11-30_23-17_1.png|Abrindo PowerShell como administrador]]
 >
 > 1. cola esse comando (olhe a documentação do programa antes, pra ele n desinstalar o que vc quer que fique):
 >
 > `& ([scriptblock]::Create((irm "https://debloat.raphi.re/")))`
 >
-> ![[imagens/2025-11-30_23-18.png]]
+> ![[imagens/2025-11-30_23-18.png|Comando script debloat Raphire]]
 >
 > 2. vai abrir esse menu azul. pra pra mim, a opção **1 (Default mode)** eh a perfeita. ela tira o lixo mas mantem a loja e coisas essenciais funcionando. digita `1` e enter.
 >
-> ![[imagens/2025-11-30_23-18_2.png]]
+> ![[imagens/2025-11-30_23-18_2.png|Menu de opções do script Windows Debloat]]
 >
 > 3. ele vai perguntar se quer remover os apps padrao (bloatware). obvio q sim! aperta `1` de novo.
 >
-> ![[imagens/2025-11-30_23-19.png]]
+> ![[imagens/2025-11-30_23-19.png|Selecionando remoção de apps padrão bloatware]]
 >
 > 4. agora eh so ver a magia acontecer. ele vai desabilitar telemetria, bing search, copilot, widgets chatos, recall... tudo!
 >
-> ![[imagens/2025-11-30_23-19_1.png]]
+> ![[imagens/2025-11-30_23-19_1.png|Script desativando telemetria e widgets]]
 >
 > qnd terminar, ele reinicia o explorer sozinho e o SO vai estar mais leve!
 >
-> ![[imagens/2025-11-30_23-20.png]]
+> ![[imagens/2025-11-30_23-20.png|Windows Explorer reiniciado e limpo]]
 
 > [!note]- Bypass Login Microsoft no Windows 11
 > o oobe\bypassnro não funciona mais.
@@ -915,15 +915,15 @@ _It’s all Chromium!_
 > quando chegar na tela que pede pra fazer login, aperte shift + f10 digite este comando: 
 > start ms-cxh:localonly
 > 
-> ![[imagens/2025-11-30_23-09.png]]
+> ![[imagens/2025-11-30_23-09.png|Comando start ms-cxh localonly no cmd]]
 > 
 > crie a conta local
 > 
-> ![[imagens/2025-11-30_23-09_1.png]]
+> ![[imagens/2025-11-30_23-09_1.png|Tela de criação de conta local Windows 11]]
 > 
 > pronto!
 > 
-> ![[imagens/Pasted image 20251130231210.png]]
+> ![[imagens/Pasted image 20251130231210.png|Area de trabalho Windows 11 carregada]]
 
 > [!note]- Bypass Requisitos Windows 11 (TPM/Secure Boot) em VM
 >
@@ -932,7 +932,7 @@ _It’s all Chromium!_
 >
 > basicamente ele reclama de falta de TPM 2.0 e Secure Boot. vamos arrumar pra funcionar sem, afinal é uma vm
 > 
->![[imagens/Pasted image 20251130222709.png]]
+>![[imagens/Pasted image 20251130222709.png|Erro este computador não atende aos requisitos do Windows 11]]
 > ### O "Hack" do Regedit
 >
 > quando chegar nessa tela de erro (ou logo no começo da instalação):
@@ -940,20 +940,20 @@ _It’s all Chromium!_
 > 5. aperta **Shift + F10** pra abrir o terminal (cmd).
 > 6. digita `regedit` e da enter.
 >    
->    ![[imagens/2025-11-30_22-20.png]]
+>    ![[imagens/2025-11-30_22-20.png|Editor de Registro Regedit na instalação]]
 > 7. navega até: `HKEY_LOCAL_MACHINE` > `SYSTEM` > `Setup`.
 > 8. clica com botão direito na pasta **Setup** > New > **Key** e nomeia como `LabConfig`.
 > 9. dentro da `LabConfig`, clica com botão direito > New > **DWORD (32-bit) Value**.
->    ![[imagens/2025-11-30_22-21.png]]
+>    ![[imagens/2025-11-30_22-21.png|Criando chave LabConfig no registro]]
 > 10. cria esses dois valores:
 >    - `BypassTPMCheck`
 >    - `BypassSecureBootCheck`
 > 11. clica duas vezes neles e muda o valor de **0** para **1**.
->    ![[imagens/2025-11-30_22-22.png]]
->![[imagens/2025-11-30_22-22_1.png]]
+>    ![[imagens/2025-11-30_22-22.png|Editando valor BypassTPMCheck para 1]]
+>![[imagens/2025-11-30_22-22_1.png|Chaves de bypass configuradas no regedit]]
 >
 > depois eh so fechar o regedit e o cmd, voltar uma tela na instalação e avançar de novo. o instalador para de reclamar e deixa vc ser feliz.
-> ![[imagens/2025-11-30_22-22_2.png]]
+> ![[imagens/2025-11-30_22-22_2.png|Instalação do Windows 11 avançando sem erro]]
 > 
 
 > [!note]- Melhor que o AWS S3! Sem egress?! Backup turbo com rclone usando Backblaze B2 + Cloudflare
@@ -963,7 +963,7 @@ _It’s all Chromium!_
 > 
 > sabe como eh, ne? vc tenta subir aquele backup e o upload fica uma tartaruga... ou entao o seu rclone mount faz o dolphin ou o nautilus engasgarem so pra listar os arquivos? e pra piorar, vc descobre q o google tem um limite de operacoes de api q so deixa subir uns 2 ou 3 arquivos por segundo?
 > 
-> ![[imagens/Pasted image 20251120100015.png]]
+> ![[imagens/Pasted image 20251120100015.png|Gerenciador de arquivos travando com Google Drive]]
 > 
 > eh mto chato! sem falar no limite de upload de 750gb por dia! se vc tem 2tb pra subir, tem q ficar uns 3 dias controlando tudo.
 > 
@@ -1065,7 +1065,7 @@ _It’s all Chromium!_
 > 
 > No seu terminal, digita: `rclone config`
 > 
-> ![[imagens/image 2.png]]
+> ![[imagens/rclone-config-b2.png|Configuração de remote B2 no Rclone terminal]]
 > 
 > - Cria um "New remote" (tipo `b2-free`).
 > - Escolhe a opção "Backblaze B2".
@@ -1115,17 +1115,17 @@ _It’s all Chromium!_
 > 
 > 2. clica no `+` (la em cima) e "adicionar jogo instalado localmente".
 > 
-> ![[imagens/image 4.png]]
+> ![[imagens/lutris-adicionar-jogo.png|Botão adicionar jogo localmente no Lutris]]
 > 
 >   
 > 
 > 3. preenche o nome e escolhe "wine" como "executor".
 > 
-> ![[imagens/image 5.png]]
+> ![[imagens/lutris-config-wine.png|Selecionando Wine como executor no Lutris]]
 > 
 > 4. na aba "Opções do Jogo", vc aponta pra onde ta o arquivo `.exe` q vc baixou.
 > 
-> ![[imagens/image 6.png]]
+> ![[imagens/lutris-opcoes-jogo.png|Selecionando executável do jogo no Lutris]]
 > 
 > 5. **essa eh a parte importante:** vai na aba "**Opções do Sistema**".
 > 6. la em baixo, vai ter "Variáveis de Ambiente".
@@ -1133,7 +1133,7 @@ _It’s all Chromium!_
 >     - **Chave:** `LANG`
 >     - **Valor:** `ja_JP.UTF-8`
 > 
-> ![[imagens/image 7.png]]
+> ![[imagens/lutris-lang-ja.png|Configurando variável LANG ja_JP no Lutris]]
 > 
 > pronto! qnd vc abrir o jogo pelo lutris, ele vai "fingir" q seu pc ta em japones _so praquele jogo_!
 > 
@@ -1165,11 +1165,11 @@ _It’s all Chromium!_
 > 2. clica nele com o **botao direito** > `**Winetricks**`.
 > 3. uma janelinha vai abrir. escolhe `Select the default wineprefix` (ja deve ta marcado) > `OK`.
 >     
->     ![[imagens/image 8.png]]
+>     ![[imagens/winetricks-menu.png|Menu principal do Winetricks]]
 >     
 > 4. na proxima janela, escolhe `Install a Windows DLL or component` > `OK`.
 >     
->     ![[imagens/image 9.png]]
+>     ![[imagens/winetricks-instalar-dll.png|Instalando DLL ou componente Windows]]
 >     
 > 5. agora vai abrir uma lista gigante.
 > 6. a gente precisa instalar os codecs de video. procura e marca esses (vc talvez tenha q instalar um de cada vez):
@@ -1180,7 +1180,7 @@ _It’s all Chromium!_
 > 
 > depois de instalar, fecha tudo e tenta abrir o jogo de novo!
 > 
-> ![[imagens/image 10.png]]
+> ![[imagens/jogo-japones-lutris.png|Jogo japonês rodando no Linux com Lutris]]
 > 
 >   
 > 
@@ -1259,7 +1259,7 @@ _It’s all Chromium!_
 > 
 > se tudo deu certo, vc vai ver uma tela linda tipo essa:
 > 
-> ![[imagens/image 11.png]]
+> ![[imagens/nvidia-smi-terminal.png|Saída do comando nvidia-smi no terminal]]
 
 > [!note]- Corrigindo Sérgio Sacani
 > 
@@ -1428,13 +1428,13 @@ _It’s all Chromium!_
 > 
 > agora, vc precisa saber o "nome" do seu disco. roda `lsblk` pra ver. o meu era `/dev/sda`.
 > 
-> ![[imagens/image 12.png]]
+> ![[imagens/lsblk-discos.png|Listando discos com comando lsblk]]
 > 
 > com o nome, roda o teste de saude:
 > 
 > sudo smartctl -a /dev/sda
 > 
-> ![[imagens/image 13.png]]
+> ![[imagens/smartctl-scan.png|Rodando teste smartctl no disco]]
 > 
 >   
 > 
@@ -1443,7 +1443,7 @@ _It’s all Chromium!_
 > 
 >   
 > 
-> ![[imagens/image 14.png]]
+> ![[imagens/smartctl-passed.png|Resultado PASSED no teste de saúde do disco]]
 > 
 >   
 > 
@@ -1451,7 +1451,7 @@ _It’s all Chromium!_
 > 
 >   
 > 
-> ![[imagens/image 15.png]]
+> ![[imagens/setores-realocados.png|Verificando contagem de setores realocados]]
 > 
 >   
 > 
@@ -1469,7 +1469,7 @@ _It’s all Chromium!_
 > 
 >   
 > 
-> ![[imagens/image 16.png]]
+> ![[imagens/blkdiscard-resultado.png|Resultado do comando blkdiscard]]
 > 
 > se funcionar, ele vai falar tipo:  
 > `/dev/sda: Discarded 512110190592 bytes from the offset 0`
@@ -1529,7 +1529,7 @@ _It’s all Chromium!_
 > 
 > sudo mkfs.ext4 /dev/sda1
 > 
-> ![[imagens/image 17.png]]
+> ![[imagens/mkfs-ext4.png|Formatando partição em ext4]]
 > 
 >   
 > 
@@ -1581,7 +1581,7 @@ _It’s all Chromium!_
 > 
 > Obrigado [T2 Educação](https://www.linkedin.com/company/t2educacao/) e [TopInvest Educação Financeira](https://www.linkedin.com/company/topinvest-educa%C3%A7%C3%A3o-financeira/)!
 > 
-> ![[imagens/image 18.png]]
+> ![[imagens/certificado-anbima-cea.png|Certificado de aprovação ANBIMA CEA]]
 
 > [!quote]- 2022 - Jogos online e Criptomoedas
 > 
@@ -1620,7 +1620,7 @@ _It’s all Chromium!_
 > 
 > Em 2013, comecei a minerar pequenas quantidades de Bitcoin com meu computador pessoal e participei de um pool chamado Eclipsemc. Usava o que conseguia para comprar jogos no _Humble Bundle_ e serviços como hospedagem e domínios. Na época, não tinha conta bancária, então o Bitcoin foi uma alternativa interessante para adquirir produtos digitais. Infelizmente, como muitos, não imaginava a valorização que viria nos anos seguintes.
 > 
-> [![](https://media.licdn.com/dms/image/v2/D4D12AQHp8WunQWPdDA/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1669779250270?e=1764201600&v=beta&t=pAXEzeYiYlsF3pgilX4UQJT4ipJPowassoVUjRfhxL0)](https://media.licdn.com/dms/image/v2/D4D12AQHp8WunQWPdDA/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1669779250270?e=1764201600&v=beta&t=pAXEzeYiYlsF3pgilX4UQJT4ipJPowassoVUjRfhxL0)
+> [![Imagem do artigo jogos online e criptomoedas](https://media.licdn.com/dms/image/v2/D4D12AQHp8WunQWPdDA/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1669779250270?e=1764201600&v=beta&t=pAXEzeYiYlsF3pgilX4UQJT4ipJPowassoVUjRfhxL0)](https://media.licdn.com/dms/image/v2/D4D12AQHp8WunQWPdDA/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1669779250270?e=1764201600&v=beta&t=pAXEzeYiYlsF3pgilX4UQJT4ipJPowassoVUjRfhxL0)
 > 
 > ---
 > 
@@ -1632,7 +1632,7 @@ _It’s all Chromium!_
 > 
 > Em 2016 descobri num fórum gamer uma altcoin que ganhava jogando partidas de League of Legends, chamada de Digibyte (DGB). O Digibyte Gaming foi uma promoção publicitária da moeda para atrair jovens jogadores. Na época, cada DGB valia cerca de R$ 0,0005 e eu tinha cerca de 500 mil. Novamente realizei a troca da moeda antes da valorização, mas felizmente ainda sobraram alguns que valem poucos milhares de reais (dessa vez não planejo trocar tão cedo)
 > 
-> [![](https://media.licdn.com/dms/image/v2/D4D12AQGeCBjMGIEhVw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1669779288879?e=1764201600&v=beta&t=PZcXdrJS-2QceeObd6veFHFmvz8RdeHUQhtXzjGdCo4)](https://media.licdn.com/dms/image/v2/D4D12AQGeCBjMGIEhVw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1669779288879?e=1764201600&v=beta&t=PZcXdrJS-2QceeObd6veFHFmvz8RdeHUQhtXzjGdCo4)
+> [![Imagem Digibyte altcoin artigo criptomoedas](https://media.licdn.com/dms/image/v2/D4D12AQGeCBjMGIEhVw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1669779288879?e=1764201600&v=beta&t=PZcXdrJS-2QceeObd6veFHFmvz8RdeHUQhtXzjGdCo4)](https://media.licdn.com/dms/image/v2/D4D12AQGeCBjMGIEhVw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1669779288879?e=1764201600&v=beta&t=PZcXdrJS-2QceeObd6veFHFmvz8RdeHUQhtXzjGdCo4)
 > 
 > ---
 > 
@@ -1673,31 +1673,31 @@ _It’s all Chromium!_
 > 
 > Nenhuma das imagens que estou anexando aqui foram desenhadas por um humano.
 > 
-> [![](https://media.licdn.com/dms/image/v2/D4D12AQEaY4iuPcG4sA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418105842?e=1764201600&v=beta&t=r5YhXKc69Q4bwDVhZ2d_ednDtlE8JxngbMfjueUT0VU)](https://media.licdn.com/dms/image/v2/D4D12AQEaY4iuPcG4sA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418105842?e=1764201600&v=beta&t=r5YhXKc69Q4bwDVhZ2d_ednDtlE8JxngbMfjueUT0VU)
+> [![Paisagem de anime gerada por IA NovelAI](https://media.licdn.com/dms/image/v2/D4D12AQEaY4iuPcG4sA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418105842?e=1764201600&v=beta&t=r5YhXKc69Q4bwDVhZ2d_ednDtlE8JxngbMfjueUT0VU)](https://media.licdn.com/dms/image/v2/D4D12AQEaY4iuPcG4sA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418105842?e=1764201600&v=beta&t=r5YhXKc69Q4bwDVhZ2d_ednDtlE8JxngbMfjueUT0VU)
 > 
-> [![](https://media.licdn.com/dms/image/v2/D4D12AQHeHi7A7NNjdw/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418135206?e=1764201600&v=beta&t=BTKbNm2kqDc76zwOHEOgCJZ85MiiVcM1IiO2kjUrXOI)](https://media.licdn.com/dms/image/v2/D4D12AQHeHi7A7NNjdw/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418135206?e=1764201600&v=beta&t=BTKbNm2kqDc76zwOHEOgCJZ85MiiVcM1IiO2kjUrXOI)
+> [![Paisagem de anime gerada por IA NovelAI](https://media.licdn.com/dms/image/v2/D4D12AQHeHi7A7NNjdw/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418135206?e=1764201600&v=beta&t=BTKbNm2kqDc76zwOHEOgCJZ85MiiVcM1IiO2kjUrXOI)](https://media.licdn.com/dms/image/v2/D4D12AQHeHi7A7NNjdw/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418135206?e=1764201600&v=beta&t=BTKbNm2kqDc76zwOHEOgCJZ85MiiVcM1IiO2kjUrXOI)
 > 
-> [![](https://media.licdn.com/dms/image/v2/D4D12AQF1HEhYselc1Q/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418151581?e=1764201600&v=beta&t=NhtAAMgdn3zTuG0KkMFDK2TZtfPEuIqm6yzCXtsjUJM)](https://media.licdn.com/dms/image/v2/D4D12AQF1HEhYselc1Q/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418151581?e=1764201600&v=beta&t=NhtAAMgdn3zTuG0KkMFDK2TZtfPEuIqm6yzCXtsjUJM)
+> [![Paisagem de anime gerada por IA NovelAI](https://media.licdn.com/dms/image/v2/D4D12AQF1HEhYselc1Q/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418151581?e=1764201600&v=beta&t=NhtAAMgdn3zTuG0KkMFDK2TZtfPEuIqm6yzCXtsjUJM)](https://media.licdn.com/dms/image/v2/D4D12AQF1HEhYselc1Q/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418151581?e=1764201600&v=beta&t=NhtAAMgdn3zTuG0KkMFDK2TZtfPEuIqm6yzCXtsjUJM)
 > 
-> [![](https://media.licdn.com/dms/image/v2/D4D12AQEbtFUAXrkZhQ/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418161073?e=1764201600&v=beta&t=HJFM3t0AdzpSb2LgHPm792hf4yejXeMR-Lm9P9gEDNs)](https://media.licdn.com/dms/image/v2/D4D12AQEbtFUAXrkZhQ/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418161073?e=1764201600&v=beta&t=HJFM3t0AdzpSb2LgHPm792hf4yejXeMR-Lm9P9gEDNs)
+> [![Paisagem de anime gerada por IA NovelAI](https://media.licdn.com/dms/image/v2/D4D12AQEbtFUAXrkZhQ/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418161073?e=1764201600&v=beta&t=HJFM3t0AdzpSb2LgHPm792hf4yejXeMR-Lm9P9gEDNs)](https://media.licdn.com/dms/image/v2/D4D12AQEbtFUAXrkZhQ/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418161073?e=1764201600&v=beta&t=HJFM3t0AdzpSb2LgHPm792hf4yejXeMR-Lm9P9gEDNs)
 > 
-> [![](https://media.licdn.com/dms/image/v2/D4D12AQFbge03wyWPuw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418171986?e=1764201600&v=beta&t=aFCiN4GnWkutG4g6ZjZKCHD4Xkx_oGyygiVCSbtGV5A)](https://media.licdn.com/dms/image/v2/D4D12AQFbge03wyWPuw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418171986?e=1764201600&v=beta&t=aFCiN4GnWkutG4g6ZjZKCHD4Xkx_oGyygiVCSbtGV5A)
+> [![Paisagem de anime gerada por IA NovelAI](https://media.licdn.com/dms/image/v2/D4D12AQFbge03wyWPuw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418171986?e=1764201600&v=beta&t=aFCiN4GnWkutG4g6ZjZKCHD4Xkx_oGyygiVCSbtGV5A)](https://media.licdn.com/dms/image/v2/D4D12AQFbge03wyWPuw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418171986?e=1764201600&v=beta&t=aFCiN4GnWkutG4g6ZjZKCHD4Xkx_oGyygiVCSbtGV5A)
 > 
-> [![](https://media.licdn.com/dms/image/v2/D4D12AQE2z3644PL7hg/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418183961?e=1764201600&v=beta&t=s3b9j5wKJGV7KQqz9IwFFHBFvnJHRoRKpXNfrGFSCgo)](https://media.licdn.com/dms/image/v2/D4D12AQE2z3644PL7hg/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418183961?e=1764201600&v=beta&t=s3b9j5wKJGV7KQqz9IwFFHBFvnJHRoRKpXNfrGFSCgo)
+> [![Paisagem de anime gerada por IA NovelAI](https://media.licdn.com/dms/image/v2/D4D12AQE2z3644PL7hg/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418183961?e=1764201600&v=beta&t=s3b9j5wKJGV7KQqz9IwFFHBFvnJHRoRKpXNfrGFSCgo)](https://media.licdn.com/dms/image/v2/D4D12AQE2z3644PL7hg/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418183961?e=1764201600&v=beta&t=s3b9j5wKJGV7KQqz9IwFFHBFvnJHRoRKpXNfrGFSCgo)
 > 
-> [![](https://media.licdn.com/dms/image/v2/D4D12AQGFoG5r69j2sw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418194620?e=1764201600&v=beta&t=fxt_MOt-DEfHxiOfuMQ7hhC769OaMMGdrrRkZxHlb8E)](https://media.licdn.com/dms/image/v2/D4D12AQGFoG5r69j2sw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418194620?e=1764201600&v=beta&t=fxt_MOt-DEfHxiOfuMQ7hhC769OaMMGdrrRkZxHlb8E)
+> [![Paisagem de anime gerada por IA NovelAI](https://media.licdn.com/dms/image/v2/D4D12AQGFoG5r69j2sw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418194620?e=1764201600&v=beta&t=fxt_MOt-DEfHxiOfuMQ7hhC769OaMMGdrrRkZxHlb8E)](https://media.licdn.com/dms/image/v2/D4D12AQGFoG5r69j2sw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418194620?e=1764201600&v=beta&t=fxt_MOt-DEfHxiOfuMQ7hhC769OaMMGdrrRkZxHlb8E)
 > 
-> [![](https://media.licdn.com/dms/image/v2/D4D12AQFf-3OyJxq-Xw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418209926?e=1764201600&v=beta&t=B2QBCPwIV7NnEE_cvClhSaZbvOv9ZFOfddJouPf76Fk)](https://media.licdn.com/dms/image/v2/D4D12AQFf-3OyJxq-Xw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418209926?e=1764201600&v=beta&t=B2QBCPwIV7NnEE_cvClhSaZbvOv9ZFOfddJouPf76Fk)
+> [![Paisagem de anime gerada por IA NovelAI](https://media.licdn.com/dms/image/v2/D4D12AQFf-3OyJxq-Xw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418209926?e=1764201600&v=beta&t=B2QBCPwIV7NnEE_cvClhSaZbvOv9ZFOfddJouPf76Fk)](https://media.licdn.com/dms/image/v2/D4D12AQFf-3OyJxq-Xw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418209926?e=1764201600&v=beta&t=B2QBCPwIV7NnEE_cvClhSaZbvOv9ZFOfddJouPf76Fk)
 > 
-> [![](https://media.licdn.com/dms/image/v2/D4D12AQHdokve5-ADEw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418221300?e=1764201600&v=beta&t=svM_ts-n0wquqa-Px_S3xuTVLXQ9p3581WdhYK3b8uc)](https://media.licdn.com/dms/image/v2/D4D12AQHdokve5-ADEw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418221300?e=1764201600&v=beta&t=svM_ts-n0wquqa-Px_S3xuTVLXQ9p3581WdhYK3b8uc)
+> [![Paisagem de anime gerada por IA NovelAI](https://media.licdn.com/dms/image/v2/D4D12AQHdokve5-ADEw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418221300?e=1764201600&v=beta&t=svM_ts-n0wquqa-Px_S3xuTVLXQ9p3581WdhYK3b8uc)](https://media.licdn.com/dms/image/v2/D4D12AQHdokve5-ADEw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1666418221300?e=1764201600&v=beta&t=svM_ts-n0wquqa-Px_S3xuTVLXQ9p3581WdhYK3b8uc)
 > 
-> [![](https://media.licdn.com/dms/image/v2/D4D12AQEzTM8KA8ARyA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418233154?e=1764201600&v=beta&t=lH749gcV8QP3_tFoZZcnGuDEPkVYitOBWgu_Hy0ohKg)](https://media.licdn.com/dms/image/v2/D4D12AQEzTM8KA8ARyA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418233154?e=1764201600&v=beta&t=lH749gcV8QP3_tFoZZcnGuDEPkVYitOBWgu_Hy0ohKg)
+> [![Paisagem de anime gerada por IA NovelAI](https://media.licdn.com/dms/image/v2/D4D12AQEzTM8KA8ARyA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418233154?e=1764201600&v=beta&t=lH749gcV8QP3_tFoZZcnGuDEPkVYitOBWgu_Hy0ohKg)](https://media.licdn.com/dms/image/v2/D4D12AQEzTM8KA8ARyA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418233154?e=1764201600&v=beta&t=lH749gcV8QP3_tFoZZcnGuDEPkVYitOBWgu_Hy0ohKg)
 > 
 > É como se fosse uma versão cartunista do [this person does not exist](https://thispersondoesnotexist.com/), mas com a liberdade de podermos escolher exatamente como será o resultado final, e não se limitando à pessoas.
 > 
 > O site também permite a criação de novas imagens a partir de uma foto ou desenho. É sensacional!
 > 
-> [![](https://media.licdn.com/dms/image/v2/D4D12AQHbiQSMbLRVAQ/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418424722?e=1764201600&v=beta&t=PFmcsGhIOkwMnzL7D8p4Gr9GMTj-DBf8AnQY6EeS3Z8)](https://media.licdn.com/dms/image/v2/D4D12AQHbiQSMbLRVAQ/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418424722?e=1764201600&v=beta&t=PFmcsGhIOkwMnzL7D8p4Gr9GMTj-DBf8AnQY6EeS3Z8)
+> [![Imagem criada a partir de foto ou desenho NovelAI](https://media.licdn.com/dms/image/v2/D4D12AQHbiQSMbLRVAQ/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418424722?e=1764201600&v=beta&t=PFmcsGhIOkwMnzL7D8p4Gr9GMTj-DBf8AnQY6EeS3Z8)](https://media.licdn.com/dms/image/v2/D4D12AQHbiQSMbLRVAQ/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1666418424722?e=1764201600&v=beta&t=PFmcsGhIOkwMnzL7D8p4Gr9GMTj-DBf8AnQY6EeS3Z8)
 > 
 > A utilização da ferramenta de imagens é paga, mas é possível instalar em seu próprio servidor através de uma [dica que achei no YouTube](https://www.youtube.com/watch?v=_kaoyb_viPc). Testei e tá funcionando!
 
@@ -1713,7 +1713,7 @@ _It’s all Chromium!_
 > 
 > Estava confiante na aprovação devido a similaridade de conteúdo com a certificação ANBIMA - CEA e de minha experiência pessoal com operações na Bolsa. Não irei fazer o registro na ANCORD devido o conflito de interesse com a atividade de consultor.
 > 
-> ![[imagens/image 19.png]]
+> ![[imagens/certificado-ancord-aai.png|Resultado de aprovação ANCORD AAI]]
 
 > [!quote]- 2022 - Indústria de videogames
 > 
@@ -1733,7 +1733,7 @@ _It’s all Chromium!_
 > 
 > Avatar, que foi lançado em 2009, é atualmente o filme com a maior bilheteria da história, tendo gerado uma receita de US$ 2,9 bilhões. O jogo Honor of Kings, lançado em 2015, já gerou uma receita de US$ 13 bilhões.
 > 
-> ![[imagens/image 20.png]]
+> ![[imagens/grafico-games-vs-filmes.png|Gráfico comparando receita de games e filmes]]
 
 > [!quote]- 2023 - Criação de IA de streaming que responde comentários ao vivo
 > 
@@ -1756,7 +1756,7 @@ _It’s all Chromium!_
 > 
 > Isso foi possível graças a vídeos que ensinaram diferentes métodos para criar uma IA do tipo VTuber, como a Neuro-sama.
 > 
-> ![[imagens/image 21.png]]
+> ![[imagens/ia-streamer-avatar.png|Avatar de IA para streaming ao vivo]]
 
 > [!quote]- 2023 - Vtubers e Neuro Sama na Bloomberg?!
 > 
@@ -1822,7 +1822,7 @@ _It’s all Chromium!_
 > 
 > Mas dessa vez ela será capaz de conversar em qualquer idioma, com qualquer pessoa, ao vivo ou não.
 > 
-> ![[imagens/image 22.png]]
+> ![[imagens/rvc-clone-voz.png|Interface de treinamento de voz RVC v2]]
 
 > [!quote]- 2023 - Evite falar “gringo”
 > 
@@ -1834,7 +1834,7 @@ _It’s all Chromium!_
 > 
 > Opte por termos diferentes para evitar mal-entendidos.
 > 
-> ![[imagens/image 23.png]]
+> ![[imagens/dicionario-gringo.png|Definição da palavra gringo no dicionário]]
 > 
 > Foto: Dicionário Michaelis
 
@@ -1858,13 +1858,13 @@ _It’s all Chromium!_
 > 
 >   
 > 
-> ![[imagens/image 24.png]]
+> ![[imagens/streamer-zhu.png|Streamer Zhu jogando com controle adaptado]]
 
 > [!quote]- 2023 - Fato curioso de Hong Kong
 > 
 > Um fato curioso de Hong Kong é que a maioria das notas são emitidas por bancos privados.
 > 
-> ![[imagens/cedula-dinheiro-hong-kong.png]]
+> ![[imagens/cedula-dinheiro-hong-kong.png|Nota de 100 dólares de Hong Kong do HSBC]]
 > 
 > Na imagem, uma nota de 100 HKD emitida pelo HSBC.
 
@@ -1882,7 +1882,7 @@ _It’s all Chromium!_
 > 
 >   
 > 
-> ![[imagens/image 26.png]]
+> ![[imagens/grafico-juros-saude-mental.png|Gráfico relacionando juros com problemas de saúde mental]]
 
 > [!quote]- 2024 - Entrevista de Henry Kissinger
 > 
@@ -1939,7 +1939,7 @@ _It’s all Chromium!_
 > Como o assunto está em alta, adiciono a recomendação aqui no LinkedIn. Son  
 > tem história muito interessante para ser lida, mas que infelizmente poucos brasileiros conhecem.
 > 
-> ![[imagens/image 27.png]]
+> ![[imagens/livro-masayoshi-son.png|Capa do livro Aiming High Masayoshi Son]]
 
 > [!quote]- 2024 - Acordo de gás natural entre China e Rússia
 > 
@@ -1952,7 +1952,7 @@ _It’s all Chromium!_
 > 
 > Já a China conseguiu negociar condições extremamente favoráveis, aproveitando-se da posição enfraquecida da Rússia.
 > 
-> ![[imagens/image 28.png]]
+> ![[imagens/putin-xi-brinde.png|Putin e Xi Jinping brindando]]
 
 > [!quote]- 2024 - Curva de Yerkes-Dodson
 > 
@@ -1977,7 +1977,7 @@ _It’s all Chromium!_
 > 
 >   
 > 
-> ![[imagens/image 29.png]]
+> ![[imagens/curva-yerkes-dodson.png|Gráfico da curva de produtividade Yerkes-Dodson]]
 
 > [!quote]- 2024 - Japão como país soberano?
 > 
@@ -2055,7 +2055,7 @@ _It’s all Chromium!_
 > 
 >   
 > 
-> ![[imagens/image 30.png]]
+> ![[imagens/tabela-energia-linguagens.png|Tabela comparativa de consumo de energia por linguagem]]
 
 > [!quote]- 2024 - O governo errou o RG
 > 
@@ -2065,7 +2065,7 @@ _It’s all Chromium!_
 > 
 > Pode ser algo bobo, mas eu acho que o documento oficial de identificação estar escrito errado é grotesco.
 > 
-> ![[imagens/foto-rg.png]]
+> ![[imagens/foto-rg.png|Erro de digitação Nacionality no novo RG brasileiro]]
 
 > [!quote]- 2025 - Aprovado na AWS CCP!
 > 
@@ -2075,7 +2075,7 @@ _It’s all Chromium!_
 > 
 >   
 > 
-> ![[imagens/aws-ccp-certificado.png]]
+> ![[imagens/aws-ccp-certificado.png|Certificado AWS Cloud Practitioner]]
 
 > [!quote]- 2025 - Ubuntu apenas na RAM
 > 
@@ -2143,7 +2143,7 @@ _It’s all Chromium!_
 > initrd /initrd.img-ram  
 > }  
 > 
-> ![[imagens/ubuntu-ram.png]]
+> ![[imagens/ubuntu-ram.png|Configuração grub para Ubuntu na RAM]]
 
 > [!quote]- 2025 - Conclusão MBA em Macroeconomia & Portfolio Management!
 > 
@@ -2161,4 +2161,4 @@ _It’s all Chromium!_
 > 
 > Queria agradecer mto aos professores incríveis que eu tive! Foi uma grande honra quando o Guedes respondeu minha dúvida ao vivo.
 > 
-> ![[imagens/certificado-conclusao-mba.png]]
+> ![[imagens/certificado-conclusao-mba.png|Certificado de conclusão MBA em Macroeconomia]]
