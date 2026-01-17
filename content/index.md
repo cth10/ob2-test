@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-01-17T13:50:41.188-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Cellebrite","Anti-Forense"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-01-17T14:13:11.978-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Cellebrite","Anti-Forense"],"cssclasses":""}
 ---
 
 
@@ -20,8 +20,33 @@ iframe, video {
     margin: 0 auto;       /* Centraliza a imagem na tela */
     object-fit: contain;  /* Garante que a imagem caiba direitinho */
   }
+
+table {
+    display: block !important; 
+    width: 100% !important;
+    overflow-x: auto !important; 
+    white-space: nowrap;         
+    -webkit-overflow-scrolling: touch; 
+  }
+
+
+pre, code {
+    white-space: pre-wrap !important; 
+    word-break: break-all !important;
+    max-width: 100%;
+    overflow-x: auto !important;
+  }
+
+
+callout, blockquote {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
 </style>
-</style>
+
 
 
 
