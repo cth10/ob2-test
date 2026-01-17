@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-01-17T14:37:31.789-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Cellebrite","Anti-Forense"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-01-17T15:35:50.146-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Cellebrite","Anti-Forense"],"cssclasses":""}
 ---
 
 
@@ -347,7 +347,7 @@ _It’s all Chromium!_
 >
 > ultimamente ta todo mundo em brasilia surtando com a tal "devassa digital" e o uso do **Cellebrite Premium**. mas sera q eh tudo isso mesmo? ou eh so *hype* pra assustar?
 >
-> como especialista em segurança que lida diariamente com **dados bancários confidenciais** e **acessos restritos a servidores**, eu sei que confiar na sorte nao adianta. por isso, resolvi explicar o que eh real e compartilhar a ferramenta que eu mesmo codei pra garantir que meu cache nunca seja lido por ninguem.
+> como especialista em segurança digital, eu sei que confiar na sorte nao adianta. por isso, resolvi explicar o que eh real e compartilhar uma ferramenta que eu mesmo codei.
 >
 > ### O que eh o Cellebrite?
 >
