@@ -1,7 +1,6 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java, Linux e Cloud (AWS CCP). Confira meu portfólio com automação CI/CD e Docs-as-Code.","created":"2025-11-30T22:23:47.383-03:00","modified":"2026-01-03T05:05:05.754-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-01-17T12:44:30.166-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Cibersegurança       <-- Adicione daqui pra baixo","Banco Master","Cellebrite","Anti-Forense"],"cssclasses":""}
 ---
-
 
 
 
@@ -185,7 +184,11 @@ _It’s all Chromium!_
 
 >[!important] Rascunhos rápidos e sem formalidades.
 
+
+
 > [!note]- A Devassa Digital em Brasília, Banco Master e Cellebrite (+ Toolset Pessoal)
+>
+> **Data:** 15/06/2025 | **Tags:** #Cibersegurança #BancoMaster #Cellebrite #GaioladeFaraday
 >
 > ultimamente ta todo mundo em brasilia surtando com a tal "devassa digital" e o uso do **Cellebrite Premium**. mas sera q eh tudo isso mesmo? ou eh so *hype* pra assustar?
 >
