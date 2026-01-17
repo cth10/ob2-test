@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-01-17T16:26:43.397-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Cellebrite","Anti-Forense"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-01-17T16:40:13.301-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Cellebrite","Anti-Forense"],"cssclasses":""}
 ---
 
 
@@ -885,29 +885,29 @@ _It’s all Chromium!_
 >
 > 1. abra o menu iniciar, digita `powershell` e... mto importante: clica com botao direito em **Executar como Administrador** (senao nao funciona!).
 >
-> ![[imagens/2025-11-30_23-17_1.png|Abrindo PowerShell como administrador]]
+> ![[imagens/debloat-powershell-admin.png|Abrindo PowerShell como administrador]]
 >
 > 1. cola esse comando (olhe a documentação do programa antes, pra ele n desinstalar o que vc quer que fique):
 >
 > `& ([scriptblock]::Create((irm "https://debloat.raphi.re/")))`
 >
-> ![[imagens/2025-11-30_23-18.png|Comando script debloat Raphire]]
+> ![[imagens/debloat-comando-raphire.png|Comando script debloat Raphire]]
 >
 > 2. vai abrir esse menu azul. pra pra mim, a opção **1 (Default mode)** eh a perfeita. ela tira o lixo mas mantem a loja e coisas essenciais funcionando. digita `1` e enter.
 >
-> ![[imagens/2025-11-30_23-18_2.png|Menu de opções do script Windows Debloat]]
+> ![[imagens/debloat-menu-opcoes.png|Menu de opções do script Windows Debloat]]
 >
 > 3. ele vai perguntar se quer remover os apps padrao (bloatware). obvio q sim! aperta `1` de novo.
 >
-> ![[imagens/2025-11-30_23-19.png|Selecionando remoção de apps padrão bloatware]]
+> ![[imagens/debloat-remover-bloatware.png|Selecionando remoção de apps padrão bloatware]]
 >
 > 4. agora eh so ver a magia acontecer. ele vai desabilitar telemetria, bing search, copilot, widgets chatos, recall... tudo!
 >
-> ![[imagens/2025-11-30_23-19_1.png|Script desativando telemetria e widgets]]
+> ![[imagens/debloat-telemetria-widgets.png|Script desativando telemetria e widgets]]
 >
 > qnd terminar, ele reinicia o explorer sozinho e o SO vai estar mais leve!
 >
-> ![[imagens/2025-11-30_23-20.png|Windows Explorer reiniciado e limpo]]
+> ![[imagens/debloat-explorer-reiniciado.png|Windows Explorer reiniciado e limpo]]
 
 > [!note]- Bypass Login Microsoft no Windows 11
 > o oobe\bypassnro não funciona mais.
@@ -915,11 +915,11 @@ _It’s all Chromium!_
 > quando chegar na tela que pede pra fazer login, aperte shift + f10 digite este comando: 
 > start ms-cxh:localonly
 > 
-> ![[imagens/2025-11-30_23-09.png|Comando start ms-cxh localonly no cmd]]
+> ![[imagens/bypass-login-cmd-ms-cxh.png|Comando start ms-cxh localonly no cmd]]
 > 
 > crie a conta local
 > 
-> ![[imagens/2025-11-30_23-09_1.png|Tela de criação de conta local Windows 11]]
+> ![[imagens/bypass-login-criar-conta-local.png|Tela de criação de conta local Windows 11]]
 > 
 > pronto!
 > 
@@ -940,20 +940,20 @@ _It’s all Chromium!_
 > 5. aperta **Shift + F10** pra abrir o terminal (cmd).
 > 6. digita `regedit` e da enter.
 >    
->    ![[imagens/2025-11-30_22-20.png|Editor de Registro Regedit na instalação]]
+>    ![[imagens/bypass-tpm-regedit.png|Editor de Registro Regedit na instalação]]
 > 7. navega até: `HKEY_LOCAL_MACHINE` > `SYSTEM` > `Setup`.
 > 8. clica com botão direito na pasta **Setup** > New > **Key** e nomeia como `LabConfig`.
 > 9. dentro da `LabConfig`, clica com botão direito > New > **DWORD (32-bit) Value**.
->    ![[imagens/2025-11-30_22-21.png|Criando chave LabConfig no registro]]
+>    ![[imagens/bypass-tpm-labconfig.png|Criando chave LabConfig no registro]]
 > 10. cria esses dois valores:
 >    - `BypassTPMCheck`
 >    - `BypassSecureBootCheck`
 > 11. clica duas vezes neles e muda o valor de **0** para **1**.
->    ![[imagens/2025-11-30_22-22.png|Editando valor BypassTPMCheck para 1]]
->![[imagens/2025-11-30_22-22_1.png|Chaves de bypass configuradas no regedit]]
+>    ![[imagens/bypass-tpm-bypasstpmcheck.png|Editando valor BypassTPMCheck para 1]]
+>![[imagens/bypass-tpm-chaves-configuradas.png|Chaves de bypass configuradas no regedit]]
 >
 > depois eh so fechar o regedit e o cmd, voltar uma tela na instalação e avançar de novo. o instalador para de reclamar e deixa vc ser feliz.
-> ![[imagens/2025-11-30_22-22_2.png|Instalação do Windows 11 avançando sem erro]]
+> ![[imagens/bypass-tpm-instalacao-avancando.png|Instalação do Windows 11 avançando sem erro]]
 > 
 
 > [!note]- Melhor que o AWS S3! Sem egress?! Backup turbo com rclone usando Backblaze B2 + Cloudflare
@@ -2162,3 +2162,4 @@ _It’s all Chromium!_
 > Queria agradecer mto aos professores incríveis que eu tive! Foi uma grande honra quando o Guedes respondeu minha dúvida ao vivo.
 > 
 > ![[imagens/certificado-conclusao-mba.png|Certificado de conclusão MBA em Macroeconomia]]
+
