@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-01-17T12:44:30.166-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Cibersegurança       <-- Adicione daqui pra baixo","Banco Master","Cellebrite","Anti-Forense"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-01-17T12:46:14.543-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Cibersegurança       <-- Adicione daqui pra baixo","Banco Master","Cellebrite","Anti-Forense"],"cssclasses":""}
 ---
 
 
@@ -552,7 +552,7 @@ _It’s all Chromium!_
 > }
 > ```
 >
-> 
+> ⚠️ Aviso Legal: Este artigo e o código fornecido têm fins estritamente educacionais e de proteção à privacidade pessoal (LGPD). O autor não incentiva nem endossa a utilização destas ferramentas para ocultação de atividades ilícitas ou obstrução de justiça. A segurança da informação é um direito, mas deve ser exercida dentro dos limites da lei.
 
 > [!note]- Minhas previsões pro futuro do mundo (Geopolítica)
 >
