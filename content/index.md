@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-01-17T16:53:37.053-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-01-22T18:12:51.030-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
 ---
 
 
@@ -231,7 +231,70 @@ _It’s all Chromium!_
 >[!important] Rascunhos rápidos e sem formalidades.
 
 
-
+> [!note]- Lei de Benford
+>
+> **Tags:** #matematica #java #fraude #curiosidades
+>
+> como a receita federal usa a matemática para pegar quem adultera nota fiscal...?
+>
+> chama-se **Lei de Benford** (ou Lei do Primeiro Dígito).
+>
+> 
+>
+> a intuição humana eh falha. se eu te pedir pra inventar uma lista de preços aleatórios, vc provavelmente vai tentar distribuir os números iniciais de forma igual (um pouco de 1, um pouco de 5, um pouco de 9...).
+>
+> mas na vida real (em dados naturais e financeiros), isso **não acontece**.
+>
+> a lei de benford diz que o **dígito 1** aparece como primeiro número em cerca de **30,1%** das vezes. o **dígito 9**? só **4,6%**.
+>
+> a curva eh mais ou menos assim:
+>
+> | Dígito | Frequência Esperada |
+> | :--- | :--- |
+> | 1 | 30.1% |
+> | 2 | 17.6% |
+> | 3 | 12.5% |
+> | ... | ... |
+> | 9 | 4.6% |
+>
+> ### Como a Receita te pega?
+>
+> quando uma empresa ou um politico tenta "maquiar" os dados contábeis, eles inventam números. e como humanos são péssimos geradores de aleatoriedade, os números inventados geralmente não seguem essa curva.
+>
+> o auditor roda um script, plota o gráfico e... *BAM*! se a barra do número 9 estiver gigante e a do 1 estiver pequena, eh _red flag_ na hora. eh um jeito matemático de dizer "vc está mentindo".
+>
+> ### Validando com Java
+>
+> como eu não gosto de python, fiz um *snippet* rápido em **Java** pra quem quiser testar essa teoria em algum dataset de csv que tiver sobrando ai.
+>
+> ```java
+> import java.util.HashMap;
+> import java.util.Map;
+>
+> public class BenfordLawChecker {
+>     public static void main(String[] args) {
+>         // imagine que isso aqui eh uma lista gigante de preços ou populacoes
+>         long[] data = {120, 1500, 300, 45, 9000, 11, 199, 250, 800}; 
+>         
+>         Map<Integer, Integer> counts = new HashMap<>();
+>         
+>         for (long value : data) {
+>             int firstDigit = Integer.parseInt(String.valueOf(value).substring(0, 1));
+>             counts.put(firstDigit, counts.getOrDefault(firstDigit, 0) + 1);
+>         }
+>
+>         System.out.println("Distribuição encontrada:");
+>         counts.forEach((k, v) -> {
+>             double percentage = (v * 100.0) / data.length;
+>             System.out.printf("Dígito %d: %.2f%%\n", k, percentage);
+>         });
+>     }
+> }
+> ```
+>
+> 
+>
+> 
 
 >[!note]- Responsividade é um inferno
 >
