@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-01-22T18:12:51.030-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-02-02T23:46:53.338-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
 ---
 
 
@@ -230,6 +230,53 @@ _It’s all Chromium!_
 
 >[!important] Rascunhos rápidos e sem formalidades.
 
+> [!note]- Como raios um chip é feito? (E pq Taiwan é o protagonista)
+>
+> **Data:** 02/02/2026 | **Tags:** #hardware #curiosidades #geopolitica #tech
+>
+> oi oi!
+>
+> hj eu vi um video mostrando o tamanho de um transistor e fiquei me eprguntando como q cabe tanta coisa num pedacinho de silicio?
+>
+> <iframe style="width: 100%; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/k4mM8X2LCI0" title="Quão ridiculamente pequeno é um transistor?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+>
+> entao resolvi explicar pra vcs como funciona essa magia (vulgo engenharia) por tras do pc/celular q vc ta usando agr, e pq o mundo todo depende de uma ilha minuscula.
+>
+> ### 1. O Tamanho do Absurdo
+>
+> um processador moderno tem **bilhões** de transistores. bilhoes! (o_O)
+> eles sao interruptores q ligam e desligam (0 e 1) bilhoes de vezes por segundo.
+>
+> e o tamanho eh de **3 nanometros**. isso eh menor q um virus, comparavel ao diametro de uma fita de DNA. eh ridiculamente pequeno!
+>
+> ### 2. Fotolitografia: Desenhando com Luz 
+>
+> como q fabrica isso? com pinça? claro q nao! kkkk
+> o processo chama **fotolitografia** .
+>
+> 1.  **O Wafer:** tudo começa com uma fatia de silicio super pura.
+> 2.  **A Luz:** uma maquina gigante (que custa centenas de milhoes) dispara luz ultravioleta extrema (EUV).
+> 3.  **A Escultura:** a luz passa por uma mascara e "queima" o desenho do circuito no silicio, camada por camada.
+>
+> eh feito em salas mais limpas q hospital, pq um grao de poeira destruiria o chip todo.
+>
+> ### 3. O "Torneio Shounen" dos Chips 
+>
+> aqui q a geopolitica fica tensa. cada pais tem um papel nesse arco:
+>
+> * **Taiwan (TSMC):** o *prof* supremo. eles fabricam 90% dos chips avançados do mundo (Apple, Nvidia, AMD). se taiwan parar, a economia global colapsa.
+> * **EUA (Designers):** os cerebros. empresas como Nvidia e Apple desenham os chips, mas mandam a TSMC fabricar.
+> * **Europa (ASML):** o "ferreiro lendario". fica na Holanda e é a UNICA empresa do mundo q sabe fazer a maquina de litografia EUV. eles sao intocaveis. (⌐■_■)
+> * **China:** o rival bloqueado. eles querem fabricar chips de ponta, mas sofrem sanções dos EUA e nao conseguem comprar as maquinas da ASML. tao tentando fazer na marra.
+> * **Brasil:** a gente foca no "backend" (encapsulamento e teste). tamo algumas decadas atras na fabricação do wafer em si... (T_T)
+>
+> ### 4. O Futuro (Angstroms?)
+>
+> nos proximos 5 anos, a tecnologia vai evoluir de nanometros (nm) para **angstroms** (A). vai ser mto potente pra rodar IAs pesadas!
+>
+> mas com as guerras e a divisão do mundo em blocos, acho q os eletronicos vao ficar mais caros e escassos. entao cuidem bem das suas gpus!
+>
+> ᕙ( •̀ ᗜ •́ )ᕗ
 
 > [!note]- Lei de Benford
 >
