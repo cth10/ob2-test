@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-02-02T23:46:53.338-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-02-02T23:55:46.505-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
 ---
 
 
@@ -238,7 +238,7 @@ _It’s all Chromium!_
 >
 > hj eu vi um video mostrando o tamanho de um transistor e fiquei me eprguntando como q cabe tanta coisa num pedacinho de silicio?
 >
-> <iframe style="width: 100%; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/k4mM8X2LCI0" title="Quão ridiculamente pequeno é um transistor?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+>> <iframe style="width: 100%; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/k4mM8X2LCI0" title="Quão ridiculamente pequeno é um transistor?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 >
 > entao resolvi explicar pra vcs como funciona essa magia (vulgo engenharia) por tras do pc/celular q vc ta usando agr, e pq o mundo todo depende de uma ilha minuscula.
 >
