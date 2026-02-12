@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-02-12T18:47:28.781-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-02-12T19:14:13.893-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
 ---
 
 
@@ -417,7 +417,7 @@ _It’s all Chromium!_
 >
 > o trade-off eh q o LaTeX nao renderiza como formula bonita (aparece `E = mc^2` em monospace em vez da formula formatada). mas pelo menos o app **funciona**. quando os mantenedores dos pacotes acordarem e lançarem update, eu reverto tudo.
 >
-> moral da historia: **sempre redirecione o log pra um arquivo**. se eu tivesse ficado olhando o terminal scrollando 733 erros por frame eu nunca ia achar a causa raiz. e desconfie dos seus proprios palpites — eu perdi tempo no checklist sendo q o problema era o LaTeX o tempo todo. ¯\\\_(ツ)\_/¯
+> moral da historia: **sempre redirecione o log pra um arquivo**. se eu tivesse ficado olhando o terminal scrollando 733 erros por frame eu nunca ia achar a causa raiz. e desconfie dos seus proprios palpites, eu perdi tempo no checklist sendo q o problema era o LaTeX o tempo todo. ¯\\\_(ツ)\_/¯
 
 >[!note]- O Fim do SSE-C no S3 (e a ilusão da segurança)
 >
