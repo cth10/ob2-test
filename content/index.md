@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-02-02T23:55:46.505-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-02-12T18:40:21.666-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
 ---
 
 
@@ -230,7 +230,248 @@ _It’s all Chromium!_
 
 >[!important] Rascunhos rápidos e sem formalidades.
 
-> [!note]- Como raios um chip é feito? (E pq Taiwan é o protagonista)
+>[!note]- Mayinab travava do nada ao navegar entre subtopics (7 tentativas até achar)
+>
+> **Data:** 12/02/2026 | **Tags:** #flutter #debug #mobile #scrollview
+>
+> esse foi o bug mais teimoso que ja enfrentei no **Mayinab**.
+>
+> o sintoma: ao navegar rapido entre subjects e subtopics, o app **congelava permanentemente**. nao era lag. era freeze. tinha q matar o processo e reabrir. (ꐦ°᷄д°᷅)
+>
+> e o pior: era **intermitente**. funcionava de boa por um tempo, ai do nada travava. impossivel de reproduzir consistentemente, a nao ser com stress test de cliques rapidos.
+>
+> ### As 6 Tentativas que Falharam
+>
+> eu passei DIAS achando q era o `GptMarkdown` / `flutter_math_fork` (pq ja tinham me dado dor de cabeça antes com o bug do LaTeX). tentei de tudo:
+>
+> | # | O que tentei | Funcionou? |
+> | :--- | :--- | :--- |
+> | 1 | Substituir `GptMarkdown` por `AppMarkdown` nos flashcards | ❌ |
+> | 2 | Remover `IntrinsicWidth` dos flashcards e checklists | ❌ |
+> | 3 | Remover `IntrinsicWidth` de TODOS os tipos de nota | ❌ |
+> | 4 | Debounce no callback do `ChatScrollObserver` | ❌ |
+> | 5 | `RepaintBoundary` em cada nota e cada markdown | ❌ |
+> | 6 | Remover `toRebuildScrollViewCallback` completamente | ❌ |
+>
+> a tentativa 4 foi a mais frustrante. o debounce so atrasava o loop pra ~30Hz em vez de eliminar. cada 32ms um `setState` rodava, a lista reconstruia com tamanhos levemente diferentes, o observer flipava de novo... loop infinito mais lento, mas ainda infinito. ¯\\\_(ツ)\_/¯
+>
+> ### A Causa Raiz: ChatScrollObserver
+>
+> depois de 6 fracassos eu finalmente parei de culpar o markdown e fui ler o **codigo fonte** do `ChatScrollObserver` do pacote `scrollview_observer`. e la tava o monstro.
+>
+> tres mecanismos interligados causavam o freeze:
+>
+> **1. Cadeia perpetua de `addPostFrameCallback`**
+>
+> o construtor do `ChatScrollObserver` agenda `observeSwitchShrinkWrap()`. esse metodo, internamente, agenda **outro** `addPostFrameCallback`. o `reattach()` chama `innerReattachCallBack` que dispara `_setupSliverController()`, que agenda **mais um** callback. resultado: loop infinito de callbacks que nunca para. eh um trem desgovernado.
+>
+> ```dart
+> // o construtor ja comeca agendando o caos
+> ChatScrollObserver(this.observerController) {
+>   WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
+>     observeSwitchShrinkWrap(); // ← agenda OUTRO callback interno
+>   });
+> }
+> ```
+>
+> **2. `standby()` força re-layout sem correcao de posicao**
+>
+> o `standby()` chama `viewport.markNeedsLayout()` pra forcar re-layout, mas sem `ChatObserverClampingScrollPhysics` (que eu nunca configurei no `ListView`), a correcao de posicao nunca eh executada. o `markNeedsLayout()` so causa trabalho desnecessario que alimenta o loop de observacao.
+>
+> **3. Mismatch de `shrinkWrap`**
+>
+> `ChatScrollObserver` comeca com `innerIsShrinkWrap = true`, mas meu `ListView.builder` tinha `shrinkWrap: false` hardcoded. o `observeSwitchShrinkWrap` detecta a diferenca, flipa pra `false`, chama `reattach()`, que agenda novos callbacks... e o ciclo se repete pra sempre. (╥_╥)
+>
+> ### A Solucao (Tentativa 7)
+>
+> removi o `ChatScrollObserver` **inteiramente**. sem meias medidas.
+>
+> ```dart
+> // ANTES (bugado):
+> _chatScrollObserver = ChatScrollObserver(_observerController)
+>   ..fixedPositionOffset = 5;
+>
+> // DEPOIS (funcional):
+> // nada. removido. bye bye.
+> ```
+>
+> mantive o `ListObserverController` + `ListViewObserver` puros (pq esses sao usados pra `jumpTo`, `animateTo` e paginacao via `onObserve`) — eles nao tem os side effects malucos do wrapper de chat.
+>
+> ### Bonus: Bugs que achei no caminho
+>
+> enquanto investigava o freeze, achei mais 3 bugs escondidos q contribuiam pro caos:
+>
+> **Leak de `FocusNode`:** era criado inline dentro do `build()` a cada rebuild, nunca era `dispose()`d. cada rebuild = novo `FocusNode` orfao. movido pra campo da classe com `dispose()` correto.
+>
+> **Leak de stream subscription:** o `_watchChanges()` no `PaginatedNotesNotifier` criava nova subscription sem cancelar a anterior quando os parametros mudavam. adicionei `_changeSubscription?.cancel()` antes de criar nova.
+>
+> **Rebuilds redundantes:** o `_refreshLoaded()` substituia toda a `state` com nova lista mesmo quando o conteudo era identico (mesmos IDs, mesmos `updatedAt`). adicionei deep equality check pra pular quando nada mudou de verdade.
+>
+> ### Resultado
+>
+> | Metrica | Antes | Depois |
+> | :--- | :--- | :--- |
+> | Freeze intermitente | sim | **nao** |
+> | `dart analyze lib/` | 0 erros | **0 erros** |
+> | `flutter test` | — | **720 passed** |
+> | Tentativas | 6 falhas | **1 sucesso** |
+>
+> ### Licao aprendida
+>
+> **leia o codigo fonte dos pacotes que vc usa.** eu perdi dias achando q era o `GptMarkdown`, o `IntrinsicWidth`, o layout... quando o problema era um pacote de scroll que eu nunca tinha aberto o source. se eu tivesse lido o construtor do `ChatScrollObserver` no dia 1, teria economizado 6 tentativas.
+>
+> e desconfie de qualquer coisa que agenda `addPostFrameCallback` dentro de outro `addPostFrameCallback`. isso eh receita pra loop infinito. (⌐■_■)
+
+>[!note]- Flutter 3.38 quebrou meu app por causa de LaTeX (733 erros por frame!)
+>
+> **Data:** 09/02/2026 | **Tags:** #flutter #latex #debug #mobile
+>
+> gente. eu quase chorei.
+>
+> abri meu app no topico "Tips & Tricks" e o terminal EXPLODIU. tipo, 733 erros por frame. o app ficou inutilizavel, travando, tudo quebrado. achei q era bug no meu checklist (pq ja tinha dado problema antes), mas nao era.
+>
+> ### A Investigação (spoiler: foi o LaTeX)
+>
+> passei um tempao arrumando o checklist (`NoteChecklistContent`). achei bugs reais la:
+> - `IntrinsicWidth` brigando com `Flexible` (conflito de constraints)
+> - `Checkbox` com sizing zuado dentro de `Row`
+> - `mainAxisSize: MainAxisSize.min` num `Row` com filhos `Flexible`
+>
+> corrigi tudo: troquei `Checkbox` por `Icon` + `GestureDetector`, `Flexible` → `Expanded`, etc. eram correções validas, mas... **nao resolveram o problema principal**. (╥_╥)
+>
+> ai redirecionei a saida do `flutter run` pra um arquivo de log e finalmente vi a cascata real:
+>
+> | Erro | Quantidade |
+> | :--- | :--- |
+> | Invalid argument(s): string is not well-formed UTF-16 | 3 |
+> | RenderLine does not implement "computeDryBaseline" | 1 |
+> | RenderBox was not laid out: RenderIntrinsicWidth | 1 |
+> | RenderBox was not laid out: RenderIndexedSemantics | 288 |
+> | 'parentDataDirty' assertion failures | 440 |
+> | **TOTAL** | **~733/frame** |
+>
+> ### A Causa Raiz
+>
+> o topico tinha uma nota com LaTeX inline: `$E = mc^2$`. o `GptMarkdown` converte `$...$` pra `\(...\)` e manda pro `flutter_math_fork` renderizar via `Math.tex()`.
+>
+> acontece q o `flutter_math_fork` v0.7.4 usa uma classe `RenderLine` (custom `RenderBox`) que **nao implementa `computeDryBaseline`** — um metodo que virou **obrigatorio** no Flutter 3.38.
+>
+> resultado: o `RenderLine` falha → o `RenderIntrinsicWidth` pai nao consegue fazer layout → o `RenderIndexedSemantics` (acessibilidade) falha em cascata → o framework detecta `parentDataDirty` em centenas de render objects → repete a cada frame. loop infinito de dor e sofrimento.
+>
+> e o pior: **nao tem versao nova** de nenhum dos dois pacotes (`gpt_markdown` 1.1.5 e `flutter_math_fork` 0.7.4). os dois tao abandonados e incompativeis com Flutter 3.38. (ꐦ°᷄д°᷅)
+>
+> ### O Workaround (sim, gambiarra)
+>
+> ja q nao da pra usar o `Math.tex()` sem crashar, criei um builder seguro q renderiza LaTeX como **texto estilizado** (monospace + italico) em vez de formula bonitinha:
+>
+> ```dart
+> static Widget safeLatexBuilder(
+>   BuildContext context,
+>   String tex,
+>   TextStyle textStyle,
+>   bool inline,
+> ) {
+>   final theme = Theme.of(context);
+>   return Text(
+>     tex,
+>     style: textStyle.copyWith(
+>       fontFamily: 'monospace',
+>       fontStyle: FontStyle.italic,
+>       color: theme.colorScheme.onSurface.withValues(alpha: 0.85),
+>     ),
+>   );
+> }
+> ```
+>
+> tambem fiz um pre-processamento proprio pra converter `$...$` → `\(...\)` **fora** do `GptMarkdown`, pq o regex interno dele tava gerando strings UTF-16 malformadas:
+>
+> ```dart
+> static String _convertDollarLatex(String text) {
+>   var result = text.replaceAllMapped(
+>     RegExp(r'(?<!\\)\$\$(.*?)(?<!\\)\$\$', dotAll: true),
+>     (match) => '\\[${match[1] ?? ""}\\]',
+>   );
+>   if (!result.contains(r'\(')) {
+>     result = result.replaceAllMapped(
+>       RegExp(r'(?<!\\)\$(.*?)(?<!\\)\$'),
+>       (match) => '\\(${match[1] ?? ""}\\)',
+>     );
+>   }
+>   return result;
+> }
+> ```
+>
+> ai chamei o `GptMarkdown` com `useDollarSignsForLatex: false` (ja q a conversao foi feita na mao) e apliquei o `latexBuilder` seguro em **todos** os lugares q usam `GptMarkdown` diretamente:
+> - `study_session_screen.dart` (3 usos)
+> - `edit_note_dialog.dart` (1 uso)
+> - `flashcard_bubble_content.dart` (1 uso)
+>
+> ### Resultado
+>
+> | Metrica | Antes | Depois |
+> | :--- | :--- | :--- |
+> | parentDataDirty assertions | 440/frame | **0** |
+> | RenderBox was not laid out | 289/frame | **0** |
+> | computeDryBaseline errors | 1/frame | **0** |
+> | App usavel | nao | **sim** |
+>
+> o trade-off eh q o LaTeX nao renderiza como formula bonita (aparece `E = mc^2` em monospace em vez da formula formatada). mas pelo menos o app **funciona**. quando os mantenedores dos pacotes acordarem e lançarem update, eu reverto tudo.
+>
+> moral da historia: **sempre redirecione o log pra um arquivo**. se eu tivesse ficado olhando o terminal scrollando 733 erros por frame eu nunca ia achar a causa raiz. e desconfie dos seus proprios palpites — eu perdi tempo no checklist sendo q o problema era o LaTeX o tempo todo. ¯\\\_(ツ)\_/¯
+
+>[!note]- O Fim do SSE-C no S3 (e a ilusão da segurança)
+>
+> **Data:** 03/02/2026 | **Tags:** #aws #s3 #seguranca #criptografia #cloud
+>
+> recebi um email da aws q quase me matou do coracao... 
+>
+> basicamente o aviso dizia: `[Action may be Required] Amazon S3 to automatically disable SSE-C encryption for new buckets`.
+>
+>  ![[imagens/Amazon S3 to automatically disable SSE-C.png|Email de aviso da AWS sobre SSE-C]]
+>
+> minha primeira reacao foi: "pronto, querem roubar minhas chaves e forcar o uso do KMS pra eles terem acesso a tudo".
+>
+> eu sempre usei **SSE-C** (Server-Side Encryption with Customer-Provided Keys) pq eu sou chata com seguranca. eu pensava: "eu guardo a chave, eu mando o arquivo, a aws so armazena".
+>
+> mas dps de analisar a fundo, percebi q eu tava vivendo uma ilusao de seguranca. (¬_¬)
+>
+> ### O Teatro de Segurança
+>
+> a real eh q o SSE-C eh meio "teatro" pra quem nao confia na nuvem.
+>
+> pensa cmg: pra aws criptografar seu arquivo usando sua chave... vc tem q enviar a chave pra eles no momento do upload (via HTTPS).
+>
+> ou seja, a chave **entra no servidor deles**, vai pra memoria RAM, eles usam pra embaralhar os dados e dps "prometem" que deletam a chave da memoria.
+>
+> se vc nao confia na amazon, vc nao devia confiar neles nem por esse milissegundo q a chave ta na mao deles.
+>
+> ### Lixo Digital
+>
+> alem disso, tem o risco operacional: se vc perder a chave, ja era. a aws nao tem backup. o arquivo vira lixo digital. 🗑️
+>
+> eles devem receber mto ticket de suporte de gente chorando pq perdeu a chave, entao resolveram desativar isso por padrao a partir de **abril de 2026** (ainda da pra usar, mas vai ter q ativar via API, o q eh chato).
+>
+> ### A Solução Real: Client-Side Encryption
+>
+> se vc eh paranoico q nem eu, a solucao nao eh dar a chave pra aws brincar. eh nunca deixar a chave sair do seu pc.
+> chama-se **Client-Side Encryption**.
+>
+> 1. Vc criptografa o arquivo no seu pc (usando GPG, OpenSSL, ou o SDK da linguagem).
+> 2. O arquivo vira uma "sopa de letrinhas" ilegivel.
+> 3. Vc sobe essa sopa pro S3.
+>
+> pra AWS, aquilo eh so um amontoado de bytes aleatorios. eles nunca viram a chave, nunca viram o conteudo.
+>
+> ### Como fazer isso sem dor de cabeça? (Rclone S2)
+>
+> lembra do meu post sobre o **Rclone + Backblaze**? (tem ai em cima na pagina!) entao, o rclone tem uma feature nativa chamada **Crypt**.
+>
+> em vez de mandar o arquivo cru, vc configura um "remote" criptografado que aponta pro S3. eh super seguro!
+>
+> ps: pra uso corporativo, o **KMS** (Key Management Service) eh melhor, pq a chave fica num **HSM** (hardware blindado) q nem os funcionarios da AWS conseguem extrair. entao ta tudo bem! 
+>
+
+>[!note]- Como raios um chip é feito? (E pq Taiwan é o protagonista)
 >
 > **Data:** 02/02/2026 | **Tags:** #hardware #curiosidades #geopolitica #tech
 >
@@ -238,7 +479,7 @@ _It’s all Chromium!_
 >
 > hj eu vi um video mostrando o tamanho de um transistor e fiquei me eprguntando como q cabe tanta coisa num pedacinho de silicio?
 >
->> <iframe style="width: 100%; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/k4mM8X2LCI0" title="Quão ridiculamente pequeno é um transistor?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+> <iframe style="width: 100%; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/k4mM8X2LCI0" title="Quão ridiculamente pequeno é um transistor?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 >
 > entao resolvi explicar pra vcs como funciona essa magia (vulgo engenharia) por tras do pc/celular q vc ta usando agr, e pq o mundo todo depende de uma ilha minuscula.
 >
@@ -2265,4 +2506,5 @@ _It’s all Chromium!_
 > Queria agradecer mto aos professores incríveis que eu tive! Foi uma grande honra quando o Guedes respondeu minha dúvida ao vivo.
 > 
 > ![[imagens/certificado-conclusao-mba.png|Certificado de conclusão MBA em Macroeconomia]]
+
 
