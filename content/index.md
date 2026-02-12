@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-02-12T18:43:12.259-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-02-12T18:47:28.781-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
 ---
 
 
@@ -295,7 +295,7 @@ _It’s all Chromium!_
 > // nada. removido. bye bye.
 > ```
 >
-> mantive o `ListObserverController` + `ListViewObserver` puros (pq esses sao usados pra `jumpTo`, `animateTo` e paginacao via `onObserve`) — eles nao tem os side effects malucos do wrapper de chat.
+> mantive o `ListObserverController` + `ListViewObserver` puros (pq esses sao usados pra `jumpTo`, `animateTo` e paginacao via `onObserve`)  eles nao tem os side effects malucos do wrapper de chat.
 >
 > ### Bonus: Bugs que achei no caminho
 >
