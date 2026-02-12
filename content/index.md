@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-02-12T18:40:21.666-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-02-12T18:43:12.259-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
 ---
 
 
@@ -431,7 +431,7 @@ _It’s all Chromium!_
 >
 > minha primeira reacao foi: "pronto, querem roubar minhas chaves e forcar o uso do KMS pra eles terem acesso a tudo".
 >
-> eu sempre usei **SSE-C** (Server-Side Encryption with Customer-Provided Keys) pq eu sou chata com seguranca. eu pensava: "eu guardo a chave, eu mando o arquivo, a aws so armazena".
+> eu sempre usei **SSE-C** (Server-Side Encryption with Customer-Provided Keys) pq eu me preocupo com seguranca. eu pensava: "eu guardo a chave, eu mando o arquivo, a aws so armazena".
 >
 > mas dps de analisar a fundo, percebi q eu tava vivendo uma ilusao de seguranca. (¬_¬)
 >
