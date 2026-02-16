@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-02-16T09:39:18.989-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-02-16T09:41:51.740-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
 ---
 
 
@@ -265,7 +265,7 @@ _It’s all Chromium!_
 >
 > so que o Metro gera bundles no formato **classic script** (`<script src="...">`), e **nao** `<script type="module">`. nesse contexto, `import.meta` eh um **SyntaxError** que mata o **parsing do bundle inteiro** antes de qualquer codigo executar. QUALQUER codigo. o React nem chega a rodar. rip.
 >
-> e o mais diabolico: o Metro compila sem erros. a pagina HTML retorna status 200. so que o JS tem um SyntaxError no parse que acontece **silenciosamente**. sem feedback visual nenhum. vc so ve o branco. (ꐦ°᷄д°᷅)
+> e o mais diabolico era q o Metro compilava sem erros. a pagina HTML retorna status 200. so que o JS tem um SyntaxError no parse que acontece **silenciosamente**. sem feedback visual nenhum. vc so ve o branco. (ꐦ°᷄д°᷅)
 >
 > quando o bundle ta quebrado assim, o Metro na vdd retorna JSON com status 500 em vez de JavaScript. ai o navegador recusa executar pq o MIME type eh `application/json`. genial.
 >
