@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-02-12T19:14:13.893-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-02-16T09:33:43.607-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
 ---
 
 
@@ -229,6 +229,123 @@ _It’s all Chromium!_
 # 📝 Blog | Artigos sobre Java, Cellebrite, Linux e TI
 
 >[!important] Rascunhos rápidos e sem formalidades.
+
+>[!note]- Tela branca no Expo Web: o bundle inteiro morria antes de executar
+>
+> **Data:** 14/02/2026 | **Tags:** #react-native #expo #web #metro #debug
+>
+> feliz dia dos namorados 💀 passei ele brigando com uma tela branca.
+>
+> o **Lógica Viva** (Expo SDK 54 + React Native Web) simplesmente abria uma pagina em branco no navegador. tipo, nada. zero. void. o HTML carregava certinho (titulo "Lógica Viva", div `#root` presente), o Metro servia o bundle JS... mas nenhum conteudo React aparecia. tela branca total. (╥_╥)
+>
+> e o pior: **nenhum erro visivel na pagina**. so o branco absoluto te encarando.
+>
+> ### A Investigacao (com Playwright pq sim)
+>
+> como o VS Code nao tem acesso ao console do navegador, usei o **Playwright** (headless Chromium) pra capturar programaticamente o que tava acontecendo: conteudo do DOM, erros de console JS, tudo.
+>
+> e la veio o erro:
+>
+> ```
+> Cannot use 'import.meta' outside a module
+> ```
+>
+> hmm. interessante. e terrivel.
+>
+> ### A Causa Raiz: zustand v5 + Metro = desastre silencioso
+>
+> o **zustand v5.0.11** distribui duas versoes do codigo:
+>
+> | Build | Arquivo | Variavel de ambiente |
+> | :--- | :--- | :--- |
+> | CJS (CommonJS) | `middleware.js` | `process.env.NODE_ENV` ✅ |
+> | ESM (ES Modules) | `esm/middleware.mjs` | `import.meta.env.MODE` ❌ |
+>
+> o `package.json` do zustand tem exports condicionais. quando o Metro resolve modulos pra plataforma **web**, ele aplica a condicao `import`, selecionando os arquivos `.mjs` (ESM).
+>
+> so que o Metro gera bundles no formato **classic script** (`<script src="...">`), e **nao** `<script type="module">`. nesse contexto, `import.meta` eh um **SyntaxError** que mata o **parsing do bundle inteiro** antes de qualquer codigo executar. QUALQUER codigo. o React nem chega a rodar. rip.
+>
+> e o mais diabolico: o Metro compila sem erros. a pagina HTML retorna status 200. so que o JS tem um SyntaxError no parse que acontece **silenciosamente**. sem feedback visual nenhum. vc so ve o branco. (ꐦ°᷄д°᷅)
+>
+> quando o bundle ta quebrado assim, o Metro na vdd retorna JSON com status 500 em vez de JavaScript. ai o navegador recusa executar pq o MIME type eh `application/json`. genial.
+>
+> ### A Correcao Principal: `metro.config.js`
+>
+> criei um `metro.config.js` pra forcar a condicao de export `react-native` (que aponta pros builds CJS) e remover a condicao `import` (que selecionava os ESM com `import.meta`):
+>
+> ```javascript
+> const { getDefaultConfig } = require('@expo/metro-config');
+> const config = getDefaultConfig(__dirname);
+>
+> // Prioriza 'react-native' (CJS) sobre 'import' (ESM)
+> const conditions = config.resolver.unstable_conditionNames;
+> if (!conditions.includes('react-native')) {
+>   conditions.unshift('react-native');
+> }
+> // Remove 'import' pra que os .mjs nao sejam selecionados
+> const importIndex = conditions.indexOf('import');
+> if (importIndex !== -1) {
+>   conditions.splice(importIndex, 1);
+> }
+>
+> module.exports = config;
+> ```
+>
+> resultado: o bundle passa a usar `process.env.NODE_ENV` (CJS) em vez de `import.meta.env` (ESM). sem mais SyntaxError. ✅
+>
+> ### Plot Twist: segundo erro
+>
+> achei q ia comemorar... mas nao. depois de matar o `import.meta`, apareceu:
+>
+> ```
+> supabaseUrl is required.
+> ```
+>
+> o `src/services/supabase.ts` chamava `createClient('', '')` quando as env vars `EXPO_PUBLIC_SUPABASE_URL` e `EXPO_PUBLIC_SUPABASE_ANON_KEY` nao tavam definidas. o `@supabase/supabase-js` lanca excecao com URL vazia, matando a avaliacao do modulo e impedindo a montagem do React. mais uma vez: tela branca sem explicacao. ¯\\\_(ツ)\_/¯
+>
+> fix: placeholder URL pra modo offline.
+>
+> ```typescript
+> export const supabase = createClient<Database>(
+>   supabaseUrl || 'https://placeholder.supabase.co',
+>   supabaseAnonKey || 'placeholder-key',
+>   { ... }
+> );
+> ```
+>
+> nao funcional pra operacoes reais, mas o app inicializa e opera em modo offline.
+>
+> ### Todas as Correcoes
+>
+> | Arquivo | O que fez |
+> | :--- | :--- |
+> | `metro.config.js` (novo) | Forca Metro a usar builds CJS em vez de ESM |
+> | `app.json` | `"bundler": "metro"` na config web |
+> | `src/services/supabase.ts` | Placeholder URL/key quando env vars ausentes |
+> | `src/App.tsx` | ErrorBoundary + linking config + documentTitle |
+> | `src/services/notifications.ts` | Lazy-load condicional de modulos nativos |
+> | `src/hooks/useSync.ts` | Lazy-load de NetInfo + fallback `navigator.onLine` |
+> | `package.json` | `@expo/metro-config` como dependencia |
+>
+> ### Verificacao
+>
+> rodei teste automatizado com Playwright headless e a tela principal renderizou completa:
+>
+> ```
+> Children: 1
+> Text: "⭐ 0 XP 🏅 Nv 1 🔥 0 dias 🔄 Daily Review
+>        Conjuntos e Contagem ..."
+> ```
+>
+> HomeScreen com TopBar (XP, nivel, streak), mapa de progresso e barra de navegacao inferior. tudo funcionando. 🎉
+>
+> ### Licao aprendida
+>
+> esse cenario eh uma armadilha brutal pq **tudo parece ok**: Metro compila sem erros, HTML carrega com status 200, a div `#root` existe... mas o JavaScript morre no parse antes de executar uma unica linha. e a pagina nao te da nenhum sinal.
+>
+> a unica forma de detectar foi inspecionar o console do navegador (via headless browser). se eu tivesse ficado olhando a tela branca sem abrir o console, ia estar la ate agora. 
+>
+> **moral:** se a tela ta branca e nao tem erro visivel, roda um headless browser e captura os erros de console. e desconfie dos exports condicionais dos pacotes npm, pq eles podem escolher o build errado pro seu bundler. (⌐■_■)
 
 >[!note]- Mayinab travava do nada ao navegar entre subtopics (7 tentativas até achar)
 >
