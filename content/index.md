@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-02-16T09:33:43.607-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-02-16T09:36:00.615-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
 ---
 
 
@@ -238,7 +238,7 @@ _It’s all Chromium!_
 >
 > o **Lógica Viva** (Expo SDK 54 + React Native Web) simplesmente abria uma pagina em branco no navegador. tipo, nada. zero. void. o HTML carregava certinho (titulo "Lógica Viva", div `#root` presente), o Metro servia o bundle JS... mas nenhum conteudo React aparecia. tela branca total. (╥_╥)
 >
-> e o pior: **nenhum erro visivel na pagina**. so o branco absoluto te encarando.
+> nao tinha **nenhum erro visivel na pagina**. so o branco absoluto te encarando.
 >
 > ### A Investigacao (com Playwright pq sim)
 >
