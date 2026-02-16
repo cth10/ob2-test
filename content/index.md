@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-02-16T09:36:00.615-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-02-16T09:37:57.041-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
 ---
 
 
@@ -234,7 +234,7 @@ _It’s all Chromium!_
 >
 > **Data:** 14/02/2026 | **Tags:** #react-native #expo #web #metro #debug
 >
-> feliz dia dos namorados 💀 passei ele brigando com uma tela branca.
+> feliz valentine days 💀 passei ele brigando com uma tela branca.
 >
 > o **Lógica Viva** (Expo SDK 54 + React Native Web) simplesmente abria uma pagina em branco no navegador. tipo, nada. zero. void. o HTML carregava certinho (titulo "Lógica Viva", div `#root` presente), o Metro servia o bundle JS... mas nenhum conteudo React aparecia. tela branca total. (╥_╥)
 >
