@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-02-16T09:37:57.041-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
+{"publish":true,"title":"Celso Takeshi Hamasaki | Desenvolvedor Java & Cloud","description":"Desenvolvedor Backend Java. Artigo sobre Cellebrite, Banco Master e Segurança Digital.","created":"1969-12-31T21:00:00.000-03:00","modified":"2026-02-16T09:39:18.989-03:00","tags":["java","backend","linux","cloud","aws","devops","portfolio","Anti-Forense"],"cssclasses":""}
 ---
 
 
@@ -355,7 +355,7 @@ _It’s all Chromium!_
 >
 > o sintoma: ao navegar rapido entre subjects e subtopics, o app **congelava permanentemente**. nao era lag. era freeze. tinha q matar o processo e reabrir. (ꐦ°᷄д°᷅)
 >
-> e o pior: era **intermitente**. funcionava de boa por um tempo, ai do nada travava. impossivel de reproduzir consistentemente, a nao ser com stress test de cliques rapidos.
+> e o bug era **intermitente**. funcionava de boa por um tempo, ai do nada travava. impossivel de reproduzir consistentemente, a nao ser com stress test de cliques rapidos.
 >
 > ### As 6 Tentativas que Falharam
 >
